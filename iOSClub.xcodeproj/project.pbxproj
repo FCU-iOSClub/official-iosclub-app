@@ -13,6 +13,7 @@
 		157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */; };
 		157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3522CC91B9001A8154 /* Assets.xcassets */; };
 		157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */; };
+		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		157AAC3522CC91B9001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AAC3822CC91B9001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AAC3A22CC91B9001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6CB93BD89AA300D0A4B5CDFA /* Pods-iOSClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub.debug.xcconfig"; sourceTree = "<group>"; };
 		E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */,
 				157AAC3A22CC91B9001A8154 /* Info.plist */,
 				157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */,
+				3B0A462C22CDB162008CCF1C /* GameViewController.swift */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,

@@ -13,6 +13,8 @@
 		157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */; };
 		157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3522CC91B9001A8154 /* Assets.xcassets */; };
 		157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */; };
+		1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C122CDF7A400A04E92 /* NaviViewController.swift */; };
+		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
@@ -33,6 +35,8 @@
 		157AAC3522CC91B9001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AAC3822CC91B9001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AAC3A22CC91B9001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FD625C122CDF7A400A04E92 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainMidViewController.swift; sourceTree = "<group>"; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
 		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */,
 				3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */,
 				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
+				1FD625C122CDF7A400A04E92 /* NaviViewController.swift */,
+				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -228,9 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
 				3B0A463522CDB759008CCF1C /* TheMainViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
+				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				7638E40D22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,

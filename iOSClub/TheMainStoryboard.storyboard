@@ -11,83 +11,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--The Main View Controller-->
-        <scene sceneID="Uzr-TX-Ckd">
-            <objects>
-                <viewController storyboardIdentifier="TheMainStoryboardVC" id="ojX-AU-Qo1" customClass="TheMainViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kK8-IG-UDf" customClass="themainviewcontroller">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whv-G3-uZy">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stl-NQ-619">
-                                        <rect key="frame" x="154" y="54" width="67" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-EL-K6T">
-                                        <rect key="frame" x="336" y="53" width="31" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="菜單">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.62614320048045879" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Stl-NQ-619" firstAttribute="centerX" secondItem="whv-G3-uZy" secondAttribute="centerX" id="7SO-kU-KVc"/>
-                                    <constraint firstAttribute="height" constant="85" id="7ls-in-nNJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="Stl-NQ-619" secondAttribute="bottom" constant="10" id="VCB-8X-h03"/>
-                                </constraints>
-                            </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZI-nv-pez">
-                                <rect key="frame" x="0.0" y="85" width="375" height="727"/>
-                                <connections>
-                                    <segue destination="CRb-sv-ZFZ" kind="embed" id="p3M-fA-iy2"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="rZI-nv-pez" firstAttribute="leading" secondItem="39r-zz-Ew8" secondAttribute="leading" id="23x-a5-Umh"/>
-                            <constraint firstAttribute="bottom" secondItem="rZI-nv-pez" secondAttribute="bottom" id="3vJ-AE-Vcj"/>
-                            <constraint firstItem="rZI-nv-pez" firstAttribute="top" secondItem="whv-G3-uZy" secondAttribute="bottom" id="6mN-rT-no5"/>
-                            <constraint firstItem="39r-zz-Ew8" firstAttribute="trailing" secondItem="whv-G3-uZy" secondAttribute="trailing" id="A9P-KG-xUU"/>
-                            <constraint firstItem="39r-zz-Ew8" firstAttribute="trailing" secondItem="rZI-nv-pez" secondAttribute="trailing" id="JGS-Dk-jbA"/>
-                            <constraint firstItem="whv-G3-uZy" firstAttribute="leading" secondItem="39r-zz-Ew8" secondAttribute="leading" id="cp4-aH-xNa"/>
-                            <constraint firstItem="whv-G3-uZy" firstAttribute="top" secondItem="kK8-IG-UDf" secondAttribute="top" id="qYW-tA-G06"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="39r-zz-Ew8"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yno-Vy-haz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="118.22660098522168"/>
-        </scene>
-        <!--Table View Controller-->
+        <!--iOS Club-->
         <scene sceneID="Zae-rE-dC3">
             <objects>
                 <tableViewController id="CRb-sv-ZFZ" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tSe-Hi-jV7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="727"/>
+                        <rect key="frame" x="0.0" y="0.0" width="365" height="690"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="ZOm-2m-q3u">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="233" id="zT9-jf-VJt">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="233"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zT9-jf-VJt" id="B5S-yt-jM0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="232.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="232.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社團介紹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBh-Lz-gG0">
-                                                    <rect key="frame" x="119.66666666666667" y="15.999999999999996" width="137.33333333333331" height="40.666666666666657"/>
+                                                    <rect key="frame" x="114.00000000000001" y="15.999999999999996" width="137.33333333333337" height="40.666666666666657"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -96,7 +39,7 @@
                                                     <rect key="frame" x="9" y="50" width="359" height="182"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <string key="text">逢甲大學 iOS Club 為台灣第一個與蘋果合作之社團，希望能透過逢甲 RTC 區域教育培訓中心，讓本社團之學生能夠充分利用學校資源，培養程式設計的基本能力與邏輯觀念。本社團將會規劃許多程式開發課程，從基本的邏輯觀念，到讓同學自行創意發想 App。希冀100%的社員都對 App 有基礎概念，並能熟練程式設計，甚至精熟這項領域。</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -108,10 +51,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="297" id="ZMk-Ko-uB8">
-                                        <rect key="frame" x="0.0" y="233" width="375" height="297"/>
+                                        <rect key="frame" x="0.0" y="233" width="365" height="297"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMk-Ko-uB8" id="CUd-Ts-Kft">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="296.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="296.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="組織架構" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-Te-Aef">
@@ -121,26 +64,26 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="架構" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-Ex-RdH">
-                                                    <rect key="frame" x="0.0" y="56.666666666666657" width="375" height="239.99999999999997"/>
+                                                    <rect key="frame" x="10" y="56.666666666666657" width="355" height="239.99999999999997"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="240" id="EYx-Vq-KZa"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="vdD-Ex-RdH" firstAttribute="leading" secondItem="CUd-Ts-Kft" secondAttribute="leading" id="AXu-5n-6eR"/>
+                                                <constraint firstItem="vdD-Ex-RdH" firstAttribute="leading" secondItem="CUd-Ts-Kft" secondAttribute="leading" constant="10" id="AXu-5n-6eR"/>
                                                 <constraint firstItem="DfB-Te-Aef" firstAttribute="top" secondItem="CUd-Ts-Kft" secondAttribute="top" constant="5" id="G5q-7B-FRn"/>
                                                 <constraint firstItem="DfB-Te-Aef" firstAttribute="centerX" secondItem="CUd-Ts-Kft" secondAttribute="centerX" id="VMN-qe-M89"/>
-                                                <constraint firstAttribute="trailing" secondItem="vdD-Ex-RdH" secondAttribute="trailing" id="WOW-To-E9i"/>
+                                                <constraint firstAttribute="trailing" secondItem="vdD-Ex-RdH" secondAttribute="trailing" constant="10" id="WOW-To-E9i"/>
                                                 <constraint firstAttribute="bottom" secondItem="vdD-Ex-RdH" secondAttribute="bottom" id="hXA-lF-8aQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="576" id="D6G-kX-1ca">
-                                        <rect key="frame" x="0.0" y="530" width="375" height="576"/>
+                                        <rect key="frame" x="0.0" y="530" width="365" height="576"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D6G-kX-1ca" id="HP8-kP-U0B">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="575.66666666666663"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="575.66666666666663"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="創造目標與挑戰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov9-eg-3hW">
@@ -155,8 +98,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="賈伯斯" translatesAutoresizingMaskIntoConstraints="NO" id="Y1C-vM-oVD">
-                                                    <rect key="frame" x="0.0" y="125.66666666666669" width="375" height="450.00000000000006"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="賈伯斯" translatesAutoresizingMaskIntoConstraints="NO" id="Y1C-vM-oVD">
+                                                    <rect key="frame" x="-20" y="115" width="414" height="450.00000000000006"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="450" id="nPq-YN-cvr"/>
                                                     </constraints>
@@ -181,28 +124,87 @@
                             <outlet property="delegate" destination="CRb-sv-ZFZ" id="oTV-nj-T4d"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="iOS Club" id="Eru-Yd-YhM">
+                        <barButtonItem key="rightBarButtonItem" image="list" style="plain" id="JwB-ER-p0H">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43f-6r-R4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848.79999999999995" y="117.48768472906404"/>
+            <point key="canvasLocation" x="2071" y="92"/>
         </scene>
-        <!--View Controller-->
+        <!--iOS Club-->
         <scene sceneID="ZGW-W8-erK">
             <objects>
-                <viewController id="xHb-jX-wpK" sceneMemberID="viewController">
+                <viewController id="xHb-jX-wpK" customClass="TheMainMidViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="isd-Rm-GAo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdQ-Wc-tnS">
+                                <rect key="frame" x="5" y="88" width="365" height="690"/>
+                                <connections>
+                                    <segue destination="CRb-sv-ZFZ" kind="embed" id="MdS-YP-zwH"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZL5-9m-cVj">
+                                <rect key="frame" x="233" y="88" width="142" height="690"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zdQ-Wc-tnS" firstAttribute="top" secondItem="rvk-pN-Zv1" secondAttribute="top" id="V9Y-xL-fXb"/>
+                            <constraint firstItem="rvk-pN-Zv1" firstAttribute="trailing" secondItem="zdQ-Wc-tnS" secondAttribute="trailing" constant="5" id="WZZ-rV-ohQ"/>
+                            <constraint firstItem="zdQ-Wc-tnS" firstAttribute="leading" secondItem="rvk-pN-Zv1" secondAttribute="leading" constant="5" id="alg-HI-Hol"/>
+                            <constraint firstItem="rvk-pN-Zv1" firstAttribute="bottom" secondItem="zdQ-Wc-tnS" secondAttribute="bottom" id="mQB-NA-0ks"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rvk-pN-Zv1"/>
                     </view>
+                    <navigationItem key="navigationItem" title="iOS Club" id="UIL-Qp-SbH">
+                        <barButtonItem key="rightBarButtonItem" image="list" style="plain" id="Yjb-1n-TDH">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="clickMenu:" destination="xHb-jX-wpK" id="ABd-my-GVu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="MenuView" destination="ZL5-9m-cVj" id="bYl-G0-E7n"/>
+                        <outlet property="containerView" destination="zdQ-Wc-tnS" id="Ri7-pa-32b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwQ-0W-4w7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="828"/>
+            <point key="canvasLocation" x="1296.8" y="91.625615763546804"/>
+        </scene>
+        <!--Navi View Controller-->
+        <scene sceneID="ycw-jO-H7K">
+            <objects>
+                <navigationController storyboardIdentifier="TheMainStoryboardVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zGz-vl-fYt" customClass="NaviViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aX2-rf-SZa">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xHb-jX-wpK" kind="relationship" relationship="rootViewController" id="NAH-C5-Xck"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZ6-JS-rwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="513" y="92"/>
         </scene>
     </scenes>
     <resources>
+        <image name="list" width="21" height="21"/>
         <image name="架構" width="12702" height="8380"/>
         <image name="賈伯斯" width="817" height="930"/>
     </resources>

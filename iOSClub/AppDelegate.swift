@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyboard = UIStoryboard(name: "GameStoryoard", bundle: nil)
+        let storyboard = UIStoryboard(name: "GameStoryboard", bundle: nil)
         
         let initialViewController = storyboard.instantiateViewController(withIdentifier: "GameViewController")
         

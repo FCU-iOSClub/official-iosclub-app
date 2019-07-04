@@ -20,6 +20,10 @@
 		B785B55022CDB6B700F6BAB0 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
 		B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */; };
 		B785B55422CDD3AB00F6BAB0 /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
+		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
+		3B0A463522CDB759008CCF1C /* TheMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A463422CDB759008CCF1C /* TheMainViewController.swift */; };
+		7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */; };
+		7638E40D22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewCell.swift; sourceTree = "<group>"; };
 		B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsData.swift; sourceTree = "<group>"; };
+		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
+		3B0A463422CDB759008CCF1C /* TheMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainViewController.swift; sourceTree = "<group>"; };
+		7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = curriculumStoryboard.storyboard; sourceTree = "<group>"; };
+		7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = curriculumStoryboardCollectionViewController.swift; sourceTree = "<group>"; };
 		E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -84,10 +92,14 @@
 				157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */,
 				3B0A462C22CDB162008CCF1C /* GameViewController.swift */,
 				3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */,
+				7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */,
+				7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */,
 				B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */,
 				B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */,
 				B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */,
 				B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */,
+				3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */,
+				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -173,6 +185,8 @@
 				157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */,
 				157AAC3122CC91B8001A8154 /* Main.storyboard in Resources */,
 				B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */,
+				7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */,
+				3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */,
 				3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +244,8 @@
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,
 				B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */,
+				3B0A463522CDB759008CCF1C /* TheMainViewController.swift in Sources */,
+				7638E40D22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJ9C6N9PC3;
 				INFOPLIST_FILE = iOSClub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -394,6 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JJ9C6N9PC3;
 				INFOPLIST_FILE = iOSClub/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (

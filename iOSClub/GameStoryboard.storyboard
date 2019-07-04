@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6G2-W1-GIW">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_1" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,90 @@
             <objects>
                 <viewController storyboardIdentifier="GameViewController" id="6G2-W1-GIW" customClass="GameViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apP-Ig-qpX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeN-jr-pUZ">
-                                <rect key="frame" x="156" y="249" width="43" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgD-Y6-bnk">
+                                <rect key="frame" x="343" y="233" width="210" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="開始按鈕"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylo-AW-09w">
+                                <rect key="frame" x="782" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bzz-S7-kyr"/>
+                                    <constraint firstAttribute="width" constant="50" id="QgH-er-QLu"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="關閉按鈕"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="G7k-Hp-ZvR">
+                                <rect key="frame" x="193" y="58" width="511" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lce-9F-VRS" firstAttribute="trailing" secondItem="Ylo-AW-09w" secondAttribute="trailing" constant="20" id="eIR-9l-ICk"/>
+                            <constraint firstItem="Ylo-AW-09w" firstAttribute="top" secondItem="lce-9F-VRS" secondAttribute="top" constant="20" id="lVV-N8-j8B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lce-9F-VRS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PO3-oM-oXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35.491071428571423" y="130.43478260869566"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MSC-5B-i5v">
+            <objects>
+                <viewController id="bGL-UD-leW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Va0-AS-Gge">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-cA-RLe" userLabel="AnswerView1">
+                                <rect key="frame" x="133" y="83" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Google(真)" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-S6-1We">
+                                        <rect key="frame" x="15" y="15" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-pB-2CW">
+                                <rect key="frame" x="782" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IRW-HT-TCn"/>
+                                    <constraint firstAttribute="width" constant="50" id="NC0-4G-2n8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="關閉按鈕"/>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-2B-Cce" userLabel="AnswerView2">
+                                <rect key="frame" x="529" y="83" width="230" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Google(假)" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-Vb-g53">
+                                        <rect key="frame" x="15" y="15" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7h-qm-Uai">
+                                <rect key="frame" x="353" y="318" width="190" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="下一題按鈕"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="nzj-Er-ie6">
+                                <rect key="frame" x="0.0" y="12" width="207" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="字母的顏色錯了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCm-LS-gAH">
+                                <rect key="frame" x="387" y="58" width="122" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -27,12 +106,24 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="lce-9F-VRS"/>
+                        <constraints>
+                            <constraint firstItem="RtS-pB-2CW" firstAttribute="top" secondItem="SXC-gK-K0V" secondAttribute="top" constant="20" id="NVe-pU-cOt"/>
+                            <constraint firstItem="SXC-gK-K0V" firstAttribute="trailing" secondItem="RtS-pB-2CW" secondAttribute="trailing" constant="20" id="mUN-cf-5Ef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SXC-gK-K0V"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PO3-oM-oXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qW-0Z-wlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="131"/>
+            <point key="canvasLocation" x="662.94642857142856" y="137.68115942028987"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Google(假)" width="2000" height="2000"/>
+        <image name="Google(真)" width="2000" height="2000"/>
+        <image name="下一題按鈕" width="210" height="53"/>
+        <image name="遊戲標題文字" width="1388" height="236"/>
+        <image name="開始按鈕" width="210" height="53"/>
+        <image name="關閉按鈕" width="77" height="77"/>
+    </resources>
 </document>

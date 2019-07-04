@@ -91,19 +91,18 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="字" translatesAutoresizingMaskIntoConstraints="NO" id="8MG-Bu-3N7">
-                                                    <rect key="frame" x="5" y="62.666666666666657" width="365" height="170"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="170" id="7x3-fR-LgC"/>
-                                                    </constraints>
-                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsH-Oi-0aV">
+                                                    <rect key="frame" x="9" y="50" width="359" height="182"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">逢甲大學 iOS Club 為台灣第一個與蘋果合作之社團，希望能透過逢甲 RTC 區域教育培訓中心，讓本社團之學生能夠充分利用學校資源，培養程式設計的基本能力與邏輯觀念。本社團將會規劃許多程式開發課程，從基本的邏輯觀念，到讓同學自行創意發想 App。希冀100%的社員都對 App 有基礎概念，並能熟練程式設計，甚至精熟這項領域。</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="bBh-Lz-gG0" firstAttribute="centerX" secondItem="B5S-yt-jM0" secondAttribute="centerX" id="GKT-88-kIz"/>
-                                                <constraint firstAttribute="bottom" secondItem="8MG-Bu-3N7" secondAttribute="bottom" id="f1C-FQ-8z2"/>
                                                 <constraint firstItem="bBh-Lz-gG0" firstAttribute="top" secondItem="B5S-yt-jM0" secondAttribute="topMargin" constant="5" id="gFm-v9-iNP"/>
-                                                <constraint firstItem="8MG-Bu-3N7" firstAttribute="leading" secondItem="B5S-yt-jM0" secondAttribute="leading" constant="5" id="wsl-mS-UIz"/>
-                                                <constraint firstAttribute="trailing" secondItem="8MG-Bu-3N7" secondAttribute="trailing" constant="5" id="wxb-Jy-13f"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -203,7 +202,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="字" width="664" height="279"/>
         <image name="架構" width="12702" height="8380"/>
         <image name="賈伯斯" width="817" height="930"/>
     </resources>

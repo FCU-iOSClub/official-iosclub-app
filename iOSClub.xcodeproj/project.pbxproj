@@ -15,6 +15,7 @@
 		157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */; };
+		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		157AAC3A22CC91B9001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		6CB93BD89AA300D0A4B5CDFA /* Pods-iOSClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub.debug.xcconfig"; sourceTree = "<group>"; };
+		B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				157AAC3A22CC91B9001A8154 /* Info.plist */,
 				157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */,
 				3B0A462C22CDB162008CCF1C /* GameViewController.swift */,
+				B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */,
 				157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */,
 				157AAC3122CC91B8001A8154 /* Main.storyboard in Resources */,
+				B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

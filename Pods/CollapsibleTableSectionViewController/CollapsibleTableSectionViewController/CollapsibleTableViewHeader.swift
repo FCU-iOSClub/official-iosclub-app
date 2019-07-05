@@ -97,7 +97,7 @@ extension UIView {
         animation.toValue = toValue
         animation.duration = duration
         animation.isRemovedOnCompletion = false
-        animation.fillMode = CAMediaTimingFillMode.forwards
+        animation.fillMode = .forwards
         
         self.layer.add(animation, forKey: nil)
     }

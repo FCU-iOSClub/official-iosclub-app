@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -117,7 +117,6 @@
 				157AAC3A22CC91B9001A8154 /* Info.plist */,
 				157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */,
 				3B0A462C22CDB162008CCF1C /* GameViewController.swift */,
-				B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */,
 				3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */,
 				7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */,
 				7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */,
@@ -456,7 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.iosclub.iOSClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -476,7 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = tw.iosclub.iOSClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

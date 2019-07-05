@@ -10,6 +10,15 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 var imagarr:[String] = ["第一節","第二節","第三節","第五節","第六節","第七節"]
+var linkarr:[String] = [
+    "https://drive.google.com/file/d/1M8yP804MCF_wmtaVeOCTk-0_FEPs0ghe/view",
+    "https://drive.google.com/file/d/19M0So61yIaGOj7r0iY3p2OPVvRmf5T_u/view",
+    "https://drive.google.com/file/d/1Qa3FVzDGB8ccZBLju9EZBj1Mw1e6KDrl/view",
+    "https://drive.google.com/file/d/1s5gVC_UYKM4x12PkHl7lMATRJJ0ybI45/view",
+    "https://drive.google.com/file/d/1D53ktmb-Z7pCTnV3IHEssCGSQ2AGRIfd/view",
+    "https://drive.google.com/file/d/1D5AQ-v1-mbmPQfVR-q8KeIqxHjPBlXJ6/view",
+
+    ]
 let viewSize = UIScreen.main.nativeBounds.width
 class curriculumStoryboardCollectionViewController: UICollectionViewController {
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
@@ -55,6 +64,7 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
        // cell.backgroundColor = .black
         // Configure the cell
        // cell.frame.size.width = viewSize / 3
+        cell.text.text = linkarr[indexPath.row]
         
         return cell
     }

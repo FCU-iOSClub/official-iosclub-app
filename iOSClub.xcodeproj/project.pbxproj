@@ -19,7 +19,7 @@
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		24F174C022CEECF100C8181D /* TimelineTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */; };
 		24F174C222CEECFB00C8181D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174C122CEECFB00C8181D /* Alamofire.framework */; };
-		24F174C422CEF43E00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C322CEF43E00C8181D /* GamePlayingViewController.swift */; };
+		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
@@ -45,7 +45,7 @@
 		1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainMidViewController.swift; sourceTree = "<group>"; };
 		24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TimelineTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C122CEECFB00C8181D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24F174C322CEF43E00C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
+		24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
 		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -95,7 +95,6 @@
 		157AAC2A22CC91B8001A8154 /* iOSClub */ = {
 			isa = PBXGroup;
 			children = (
-				24F174C322CEF43E00C8181D /* GamePlayingViewController.swift */,
 				157AAC2B22CC91B8001A8154 /* AppDelegate.swift */,
 				157AAC2D22CC91B8001A8154 /* ViewController.swift */,
 				157AAC2F22CC91B8001A8154 /* Main.storyboard */,
@@ -117,6 +116,7 @@
 				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
 				1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */,
 				1176271B22CE0E4500A99999 /* ActivityViewController.swift */,
+				24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
-				24F174C422CEF43E00C8181D /* GamePlayingViewController.swift in Sources */,
+				24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
 				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,

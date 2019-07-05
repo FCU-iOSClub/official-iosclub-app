@@ -25,6 +25,7 @@
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
 		4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */; };
 		7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */; };
+		76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */; };
 		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
 		B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		6CB93BD89AA300D0A4B5CDFA /* Pods-iOSClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub.debug.xcconfig"; sourceTree = "<group>"; };
 		7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = curriculumStoryboard.storyboard; sourceTree = "<group>"; };
 		7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = curriculumStoryboardCollectionViewController.swift; sourceTree = "<group>"; };
+		76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumCollectionViewCell.swift; sourceTree = "<group>"; };
 		B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewCell.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */,
 				7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */,
 				7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */,
+				76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */,
 				B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */,
 				B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */,
 				B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */,
@@ -257,6 +260,7 @@
 				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
+				76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,
 				B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */,
 			);

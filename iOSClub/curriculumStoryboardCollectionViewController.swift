@@ -10,14 +10,17 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 var imagarr:[String] = ["第一節","第二節","第三節","第五節","第六節","第七節"]
+let viewSize = UIScreen.main.nativeBounds.width
 class curriculumStoryboardCollectionViewController: UICollectionViewController {
-
+    @IBOutlet weak var layout: UICollectionViewFlowLayout!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("test")
+        print(viewSize)
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+    //    layout.minimumInteritemSpacing = 0
         // Register cell classes
 
         // Do any additional setup after loading the view.
@@ -51,7 +54,8 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
         cell.image.image = UIImage(named: imagarr[indexPath.row])
        // cell.backgroundColor = .black
         // Configure the cell
-    
+       // cell.frame.size.width = viewSize / 3
+        
         return cell
     }
 

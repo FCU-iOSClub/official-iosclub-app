@@ -9,17 +9,38 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
+var imagarr:[String] = ["第一節","第二節","第三節","第五節","第六節","第七節"]
+var linkarr:[String] = [
+    "https://drive.google.com/file/d/1M8yP804MCF_wmtaVeOCTk-0_FEPs0ghe/view",
+    "https://drive.google.com/file/d/19M0So61yIaGOj7r0iY3p2OPVvRmf5T_u/view",
+    "https://drive.google.com/file/d/1Qa3FVzDGB8ccZBLju9EZBj1Mw1e6KDrl/view",
+    "https://drive.google.com/file/d/1s5gVC_UYKM4x12PkHl7lMATRJJ0ybI45/view",
+    "https://drive.google.com/file/d/1D53ktmb-Z7pCTnV3IHEssCGSQ2AGRIfd/view",
+    "https://drive.google.com/file/d/1D5AQ-v1-mbmPQfVR-q8KeIqxHjPBlXJ6/view",
 
+    ]
+let viewSize = UIScreen.main.nativeBounds.width
 class curriculumStoryboardCollectionViewController: UICollectionViewController {
-
+    @IBOutlet weak var layout: UICollectionViewFlowLayout!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(viewSize)
+        
+        let flow = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout // If you create collectionView programmatically then just create this flow by UICollectionViewFlowLayout() and init a collectionView by this flow.
+        
+        let itemSpacing: CGFloat = 5
+        let itemsInOneLine: CGFloat = 3
+        let width = UIScreen.main.bounds.size.width
+        //flow.sectionInset = UIEdgeInsetsMake(100, 0, 0, 0)
+        //collectionView.frame.width is the same as  UIScreen.main.bounds.size.width here.
+      //  flow.itemSize = CGSize(width: floor(width/3), height: width/4)
+        //flow.minimumInteritemSpacing = 3
+       // flow.minimumLineSpacing = 20
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
+    //    layout.minimumInteritemSpacing = 0
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }
@@ -38,20 +59,25 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 6
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CurriculumCollectionViewCell
+        cell.image.image = UIImage(named: imagarr[indexPath.row])
+       // cell.backgroundColor = .black
         // Configure the cell
-    
+       // cell.frame.size.width = viewSize / 7
+        cell.image.layer.borderColor = UIColor.black.cgColor
+        cell.image.layer.borderWidth = 3
+        cell.text.text = linkarr[indexPath.row]
+        
         return cell
     }
 

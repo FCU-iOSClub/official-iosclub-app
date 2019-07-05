@@ -9,10 +9,11 @@
 import UIKit
 
 class NaviViewController: UINavigationController {
-
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -20,8 +21,18 @@ class NaviViewController: UINavigationController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    /*
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        let frame = self.navigationController?.navigationBar.frame
+        
+        
+        let height: CGFloat = 200
+        let bounds = self.navigationController?.navigationBar.bounds
+        self.navigationController?.navigationBar.frame = CGRect(x: (frame?.origin.x)!, y: (frame?.origin.y)!, width: (bounds?.width)!, height: (bounds?.height)! + height)
+    }
+    */
     /*
     // MARK: - Navigation
 

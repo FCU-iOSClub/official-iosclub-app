@@ -6,7 +6,8 @@ target 'iOSClub' do
   use_frameworks!
 
   pod 'Alamofire'
-
+  pod 'CollapsibleTableSectionViewController', '~> 2.0.1'
+  
   # Pods for iOSClub
 
 end

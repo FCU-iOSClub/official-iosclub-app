@@ -8,8 +8,10 @@
 
 import UIKit
 
-class TheMainMidViewController: UIViewController {
-
+class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
+    
+    
+    
     override func viewDidLoad() {
         self.MenuXpos = Int(UIScreen.main.bounds.width + self.MenuView.frame.width / 2 + 1)
         
@@ -58,6 +60,7 @@ class TheMainMidViewController: UIViewController {
     @IBOutlet weak var profilePicture: UIImageView!
     var MenuChange = 0
     var MenuXpos = 0
+    
     
     
     @IBOutlet var editProfileButton: UIButton!

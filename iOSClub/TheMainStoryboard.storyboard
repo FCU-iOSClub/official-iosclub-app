@@ -14,7 +14,7 @@
         <!--iOS Club-->
         <scene sceneID="Zae-rE-dC3">
             <objects>
-                <tableViewController id="CRb-sv-ZFZ" sceneMemberID="viewController">
+                <tableViewController id="CRb-sv-ZFZ" customClass="TheMainTableViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tSe-Hi-jV7">
                         <rect key="frame" x="0.0" y="0.0" width="365" height="690"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,21 +22,43 @@
                         <sections>
                             <tableViewSection id="ZOm-2m-q3u">
                                 <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="171" id="Yk6-Z1-68m">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="171"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yk6-Z1-68m" id="0sa-pH-a2m">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="170.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Skg-MT-QsW">
+                                                    <rect key="frame" x="16" y="11" width="333" height="149"/>
+                                                    <connections>
+                                                        <segue destination="FJB-ng-Igk" kind="embed" id="hG8-vr-9Qb"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Skg-MT-QsW" firstAttribute="top" secondItem="0sa-pH-a2m" secondAttribute="topMargin" id="Egp-gp-ZHO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Skg-MT-QsW" secondAttribute="bottom" id="WT0-09-qp9"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Skg-MT-QsW" secondAttribute="trailing" id="qdU-fQ-VYt"/>
+                                                <constraint firstItem="Skg-MT-QsW" firstAttribute="leading" secondItem="0sa-pH-a2m" secondAttribute="leadingMargin" id="s82-dw-T0m"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="233" id="zT9-jf-VJt">
-                                        <rect key="frame" x="0.0" y="0.0" width="365" height="233"/>
+                                        <rect key="frame" x="0.0" y="171" width="365" height="233"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zT9-jf-VJt" id="B5S-yt-jM0">
                                             <rect key="frame" x="0.0" y="0.0" width="365" height="232.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社團介紹" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBh-Lz-gG0">
-                                                    <rect key="frame" x="133.33333333333331" y="16" width="137.33333333333331" height="41"/>
+                                                    <rect key="frame" x="114.00000000000001" y="16" width="137.33333333333337" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsH-Oi-0aV">
-                                                    <rect key="frame" x="10" y="80.333333333333329" width="384" height="142.33333333333337"/>
+                                                    <rect key="frame" x="10" y="60.333333333333329" width="345" height="162.33333333333337"/>
                                                     <string key="text">逢甲大學 iOS Club 為台灣第一個與蘋果合作之社團，希望能透過逢甲 RTC 區域教育培訓中心，讓本社團之學生能夠充分利用學校資源，培養程式設計的基本能力與邏輯觀念。本社團將會規劃許多程式開發課程，從基本的邏輯觀念，到讓同學自行創意發想 App。希冀100%的社員都對 App 有基礎概念，並能熟練程式設計，甚至精熟這項領域。</string>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -53,20 +75,20 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="297" id="ZMk-Ko-uB8">
-                                        <rect key="frame" x="0.0" y="233" width="365" height="297"/>
+                                        <rect key="frame" x="0.0" y="404" width="365" height="297"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMk-Ko-uB8" id="CUd-Ts-Kft">
                                             <rect key="frame" x="0.0" y="0.0" width="365" height="296.66666666666669"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="組織架構" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfB-Te-Aef">
-                                                    <rect key="frame" x="133.33333333333331" y="5" width="137.33333333333331" height="41"/>
+                                                    <rect key="frame" x="114.00000000000001" y="5" width="137.33333333333337" height="41"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="架構" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-Ex-RdH">
-                                                    <rect key="frame" x="10" y="56.666666666666657" width="384" height="239.99999999999997"/>
+                                                    <rect key="frame" x="10" y="56.666666666666657" width="345" height="239.99999999999997"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="240" id="EYx-Vq-KZa"/>
                                                     </constraints>
@@ -82,26 +104,26 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="576" id="D6G-kX-1ca">
-                                        <rect key="frame" x="0.0" y="530" width="365" height="576"/>
+                                        <rect key="frame" x="0.0" y="701" width="365" height="576"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="D6G-kX-1ca" id="HP8-kP-U0B">
                                             <rect key="frame" x="0.0" y="0.0" width="365" height="575.66666666666663"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="創造目標與挑戰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ov9-eg-3hW">
-                                                    <rect key="frame" x="109.66666666666669" y="16" width="185" height="31.666666666666671"/>
+                                                    <rect key="frame" x="90" y="13.000000000000002" width="185" height="31.666666666666671"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="創造，人生第一個iOS APP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10i-fh-zQk">
-                                                    <rect key="frame" x="49.666666666666657" y="49" width="305" height="32"/>
+                                                    <rect key="frame" x="30" y="46" width="305" height="32"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="賈伯斯" translatesAutoresizingMaskIntoConstraints="NO" id="Y1C-vM-oVD">
-                                                    <rect key="frame" x="0.0" y="125.66666666666669" width="404" height="450.00000000000006"/>
+                                                    <rect key="frame" x="0.0" y="125.66666666666669" width="365" height="450.00000000000006"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="450" id="9kk-bY-Fw0"/>
                                                     </constraints>
@@ -134,7 +156,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43f-6r-R4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175.1999999999998" y="91.625615763546804"/>
+            <point key="canvasLocation" x="2620" y="92"/>
         </scene>
         <!--iOS Club-->
         <scene sceneID="ZGW-W8-erK">
@@ -154,73 +176,73 @@
                                 <rect key="frame" x="220" y="88" width="155" height="690"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Cb-ZJ-fbv">
-                                        <rect key="frame" x="0.0" y="123" width="155" height="507"/>
+                                        <rect key="frame" x="0.0" y="123" width="155" height="447"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhm-oW-X9g">
-                                                <rect key="frame" x="0.0" y="0.0" width="155" height="50.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="155" height="44.666666666666664"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   首頁">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIN-rx-9ep">
-                                                <rect key="frame" x="0.0" y="50.666666666666686" width="155" height="50.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="44.666666666666657" width="155" height="44.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   護照">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUm-7P-eTr" userLabel="借社辦">
-                                                <rect key="frame" x="0.0" y="101.33333333333331" width="155" height="50.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="89.333333333333314" width="155" height="44.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   借社辦">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFu-62-QWS">
-                                                <rect key="frame" x="0.0" y="152" width="155" height="50.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="134" width="155" height="44.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   活動資訊">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="li1-8G-iVc">
-                                                <rect key="frame" x="0.0" y="202.66666666666669" width="155" height="51"/>
+                                                <rect key="frame" x="0.0" y="178.66666666666669" width="155" height="45"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   課程連結">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-7d-PB9">
-                                                <rect key="frame" x="0.0" y="253.66666666666666" width="155" height="50.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="223.66666666666669" width="155" height="44.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   資源分享">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atB-63-cax">
-                                                <rect key="frame" x="0.0" y="304.33333333333337" width="155" height="50.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="268.33333333333331" width="155" height="44.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   活動部落格">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKA-0l-HwZ">
-                                                <rect key="frame" x="0.0" y="355" width="155" height="50.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="313" width="155" height="44.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   程式小教室">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCu-3W-XJW">
-                                                <rect key="frame" x="0.0" y="405.66666666666663" width="155" height="50.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="357.66666666666663" width="155" height="44.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   UI小遊戲">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plk-03-Xed">
-                                                <rect key="frame" x="0.0" y="456.33333333333337" width="155" height="50.666666666666686"/>
+                                                <rect key="frame" x="0.0" y="402.33333333333337" width="155" height="44.666666666666686"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <state key="normal" title="   關於我們">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -303,7 +325,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.090196078431372548" green="0.10980392156862745" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="Mp9-y9-GZU" firstAttribute="top" secondItem="5nY-Xp-xgL" secondAttribute="bottom" constant="12" id="0F8-tL-S82"/>
                                     <constraint firstItem="Mp9-y9-GZU" firstAttribute="leading" secondItem="ZL5-9m-cVj" secondAttribute="leading" id="25r-pp-eWC"/>
@@ -317,7 +339,7 @@
                                     <constraint firstAttribute="trailing" secondItem="zVx-Oa-EgM" secondAttribute="trailing" constant="30" id="WUD-Xe-c5b"/>
                                     <constraint firstItem="9Cb-ZJ-fbv" firstAttribute="top" secondItem="Mp9-y9-GZU" secondAttribute="bottom" id="Yor-Fd-Eb1"/>
                                     <constraint firstAttribute="bottom" secondItem="zVx-Oa-EgM" secondAttribute="bottom" constant="20" id="bgb-js-IHz"/>
-                                    <constraint firstItem="zVx-Oa-EgM" firstAttribute="top" secondItem="9Cb-ZJ-fbv" secondAttribute="bottom" constant="10" id="bh9-cg-sfm"/>
+                                    <constraint firstItem="zVx-Oa-EgM" firstAttribute="top" secondItem="9Cb-ZJ-fbv" secondAttribute="bottom" constant="70" id="bh9-cg-sfm"/>
                                     <constraint firstItem="zVx-Oa-EgM" firstAttribute="leading" secondItem="ZL5-9m-cVj" secondAttribute="leading" constant="30" id="c2O-Z0-LHj"/>
                                     <constraint firstItem="5nY-Xp-xgL" firstAttribute="leading" secondItem="ZL5-9m-cVj" secondAttribute="leading" constant="10" id="fVF-G8-KaY"/>
                                     <constraint firstAttribute="trailing" secondItem="9Cb-ZJ-fbv" secondAttribute="trailing" id="imq-MX-0Xu"/>
@@ -364,14 +386,14 @@
             <objects>
                 <navigationController storyboardIdentifier="TheMainStoryboardVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zGz-vl-fYt" customClass="NaviViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="aX2-rf-SZa">
+                    <navigationBar key="navigationBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="aX2-rf-SZa">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.10980392156862745" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.090196078431372548" green="0.10980392156862745" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
@@ -385,6 +407,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZ6-JS-rwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="513" y="92"/>
+        </scene>
+        <!--Scroll View Controller-->
+        <scene sceneID="ATK-sS-nLX">
+            <objects>
+                <viewController id="FJB-ng-Igk" customClass="ScrollViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A27-bN-LdZ">
+                        <rect key="frame" x="0.0" y="0.0" width="333" height="149"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-KJ-Lg6">
+                                <rect key="frame" x="0.0" y="0.0" width="333" height="149"/>
+                                <subviews>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TQn-T4-t3P">
+                                        <rect key="frame" x="147" y="103" width="39" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </pageControl>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pYW-KJ-Lg6" secondAttribute="trailing" id="P66-NW-QGl"/>
+                            <constraint firstItem="pYW-KJ-Lg6" firstAttribute="top" secondItem="A27-bN-LdZ" secondAttribute="top" id="T0Z-3a-iz4"/>
+                            <constraint firstAttribute="bottom" secondItem="pYW-KJ-Lg6" secondAttribute="bottom" id="Xqe-PE-mal"/>
+                            <constraint firstItem="pYW-KJ-Lg6" firstAttribute="leading" secondItem="A27-bN-LdZ" secondAttribute="leading" id="p0t-Jc-VXY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="TQn-T4-t3P" id="vQ4-fc-ruR"/>
+                        <outlet property="scrollView" destination="pYW-KJ-Lg6" id="rx9-gH-f9L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZxI-AY-P1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3796" y="92"/>
         </scene>
     </scenes>
     <resources>

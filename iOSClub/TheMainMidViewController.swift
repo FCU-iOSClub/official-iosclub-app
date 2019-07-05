@@ -12,12 +12,19 @@ class TheMainMidViewController: UIViewController {
 
     override func viewDidLoad() {
         self.MenuXpos = Int(UIScreen.main.bounds.width + self.MenuView.frame.width / 2 + 1)
+        
         super.viewDidLoad()
+        
         self.profilePicture.layer.cornerRadius = self.profilePicture.frame.size.width / 2
         self.profilePicture.clipsToBounds = true
+        
         self.logoutButton.layer.borderWidth = 1
         self.logoutButton.layer.borderColor = UIColor.white.cgColor
         self.logoutButton.layer.cornerRadius = 5
+        
+        self.editProfileButton.layer.borderWidth = 1
+        self.editProfileButton.layer.borderColor = UIColor.white.cgColor
+        self.editProfileButton.layer.cornerRadius = 5
        
     }
 
@@ -53,6 +60,7 @@ class TheMainMidViewController: UIViewController {
     var MenuXpos = 0
     
     
+    @IBOutlet var editProfileButton: UIButton!
     @IBOutlet var logoutButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {

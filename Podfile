@@ -6,7 +6,6 @@ target 'iOSClub' do
   use_frameworks!
 
   pod 'Alamofire'
-  pod 'TimelineTableViewCell'
 
   # Pods for iOSClub
 

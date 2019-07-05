@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TimelineTableViewCell
 
 class ActivityViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     

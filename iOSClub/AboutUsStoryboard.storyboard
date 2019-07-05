@@ -99,8 +99,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="Y5Z-ek-mgZ" id="T8g-Q2-VVu"/>
-                                    <outlet property="delegate" destination="Y5Z-ek-mgZ" id="eg1-xj-E0c"/>
+                                    <outlet property="dataSource" destination="Y5Z-ek-mgZ" id="xnN-w0-vNp"/>
+                                    <outlet property="delegate" destination="Y5Z-ek-mgZ" id="WUl-Le-cwc"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -117,7 +117,7 @@
                         <viewLayoutGuide key="safeArea" id="tSl-1I-0tL"/>
                     </view>
                     <connections>
-                        <outlet property="TableView" destination="Z6K-Ym-BO3" id="NfA-Fw-zQg"/>
+                        <outlet property="tableView" destination="Z6K-Ym-BO3" id="SvP-hH-X3P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eF9-RZ-ZxT" userLabel="First Responder" sceneMemberID="firstResponder"/>

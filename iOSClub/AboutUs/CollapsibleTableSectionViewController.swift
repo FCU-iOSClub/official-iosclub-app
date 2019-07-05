@@ -30,7 +30,7 @@ open class CollapsibleTableSectionViewController: UIViewController {
     
     public var delegate: CollapsibleTableSectionDelegate?
     
-    var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
     fileprivate var _sectionsState = [Int : Bool]()
     
     public func isSectionCollapsed(_ section: Int) -> Bool {
@@ -70,16 +70,16 @@ open class CollapsibleTableSectionViewController: UIViewController {
         super.viewDidLoad()
         
         // Create the tableView
-        tableView = UITableView()
+//        tableView = UITableView()
         tableView.dataSource = self
         tableView.delegate = self
         
         // Auto resizing the height of the cell
-        tableView.estimatedRowHeight = 44.0
-        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 44.0
+//        tableView.rowHeight = UITableView.automaticDimension
         
         // Auto layout the tableView
-        view.addSubview(tableView)
+//        view.addSubview(tableView)
     }
     
 }

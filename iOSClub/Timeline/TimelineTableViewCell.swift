@@ -9,7 +9,7 @@
 import UIKit
 
 
-open class TimelineTableViewCell: UITableViewCell {
+@IBDesignable open class TimelineTableViewCell: UITableViewCell {
     
     @IBOutlet weak open var titleLabel: UILabel!
     @IBOutlet weak open var descriptionLabel: UILabel!

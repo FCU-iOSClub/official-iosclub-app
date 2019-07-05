@@ -25,6 +25,8 @@
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
 		4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */; };
 		7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */; };
+		B76239FB22CEF93900D9A2DC /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
+		B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
 		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
 		B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -250,12 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76239FB22CEF93900D9A2DC /* AboutUsViewController.swift in Sources */,
 				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
 				24F174C422CEF43E00C8181D /* GamePlayingViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
 				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
+				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,
 				B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */,

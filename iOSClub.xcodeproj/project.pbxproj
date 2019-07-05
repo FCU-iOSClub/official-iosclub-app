@@ -34,8 +34,6 @@
 		B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
 		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
 		B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */; };
-		B79FE2CD22CF41CD00FBBD45 /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79FE2CB22CF41CC00FBBD45 /* CollapsibleTableViewHeader.swift */; };
-		B79FE2CE22CF41CD00FBBD45 /* CollapsibleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79FE2CC22CF41CC00FBBD45 /* CollapsibleTableSectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,8 +69,6 @@
 		B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewCell.swift; sourceTree = "<group>"; };
 		B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsData.swift; sourceTree = "<group>"; };
-		B79FE2CB22CF41CC00FBBD45 /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
-		B79FE2CC22CF41CC00FBBD45 /* CollapsibleTableSectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableSectionViewController.swift; sourceTree = "<group>"; };
 		E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,8 +106,6 @@
 		157AAC2A22CC91B8001A8154 /* iOSClub */ = {
 			isa = PBXGroup;
 			children = (
-				B79FE2CC22CF41CC00FBBD45 /* CollapsibleTableSectionViewController.swift */,
-				B79FE2CB22CF41CC00FBBD45 /* CollapsibleTableViewHeader.swift */,
 				4225045222CF227300063948 /* Timeline */,
 				157AAC2B22CC91B8001A8154 /* AppDelegate.swift */,
 				157AAC2D22CC91B8001A8154 /* ViewController.swift */,
@@ -297,10 +291,8 @@
 				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
 				76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
-				B79FE2CD22CF41CD00FBBD45 /* CollapsibleTableViewHeader.swift in Sources */,
 				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
-				B79FE2CE22CF41CD00FBBD45 /* CollapsibleTableSectionViewController.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
 				76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,

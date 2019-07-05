@@ -27,6 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
+        //延遲loading
+        Thread.sleep(forTimeInterval: 10.0)
+        
         return true
         
         

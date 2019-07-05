@@ -19,6 +19,8 @@
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		24F174C222CEECFB00C8181D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174C122CEECFB00C8181D /* Alamofire.framework */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
+		3B019EF522CF33E1009AD27B /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
+		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
@@ -289,7 +291,9 @@
 				76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
+				3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
+				3B019EF522CF33E1009AD27B /* AboutUsViewController.swift in Sources */,
 				76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,
 				B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */,

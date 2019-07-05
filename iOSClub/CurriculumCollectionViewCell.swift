@@ -10,4 +10,5 @@ import UIKit
 
 class CurriculumCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var image: UIImageView!
 }

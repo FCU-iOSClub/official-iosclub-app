@@ -2,14 +2,13 @@
 //  GamePlayingViewController.swift
 //  iOSClub
 //
-//  Created by 黃威愷 on 2019/7/4.
+//  Created by 黃威愷 on 2019/7/5.
 //  Copyright © 2019 FCUiosclub. All rights reserved.
 //
 
 import UIKit
 
 class GamePlayingViewController: UIViewController {
-    
     @IBOutlet weak var AnswerImageRightBackground: UIView!
     @IBOutlet weak var AnswerImageLeftBackground: UIView!
     @IBOutlet weak var AfterAnswerLabel: UILabel!
@@ -27,11 +26,10 @@ class GamePlayingViewController: UIViewController {
     @IBAction func ExitButton(_ sender: Any) {
         exit(0)
     }
-    
     @IBAction func RefreshButton(_ sender: Any) {
         
     }
-    
+
     /*
     // MARK: - Navigation
 

@@ -20,12 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyboard = UIStoryboard(name: "ActivityStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "curriculumStoryboard", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "ActivityStoryboardVC")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "curriculumStoryboard")
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
+        
+        //延遲loading
+        Thread.sleep(forTimeInterval: 10.0)
         
         return true
         

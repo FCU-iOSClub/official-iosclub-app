@@ -18,17 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
-//        self.window = UIWindow(frame: UIScreen.main.bounds)
-//
-//        let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
-//
-//        let initialViewController = storyboard.instantiateViewController(withIdentifier: "AboutUsStoryboardID")
-//
-//        self.window?.rootViewController = initialViewController
-//        self.window?.makeKeyAndVisible()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "AboutUsStoryboard", bundle: nil)
+        
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "AboutUsStoryboardID")
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
         
         //延遲loading
-//        Thread.sleep(forTimeInterval: 10.0)
+        //Thread.sleep(forTimeInterval: 10.0)
         
         return true
         

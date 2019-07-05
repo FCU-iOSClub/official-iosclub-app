@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y5Z-ek-mgZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y5Z-ek-mgZ">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--About Us View Controller-->
+        <!--View Controller-->
         <scene sceneID="hVW-yj-05J">
             <objects>
-                <viewController storyboardIdentifier="AboutUsStoryboardID" id="Y5Z-ek-mgZ" customClass="AboutUsViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutUsStoryboardID" id="Y5Z-ek-mgZ" customClass="ViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdQ-eM-IdO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,17 +91,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="introduce" destination="NFU-FS-Yc7" id="Kxt-RG-F2y"/>
-                                            <outlet property="name" destination="tyA-3a-3If" id="aqd-4q-89W"/>
-                                            <outlet property="photo" destination="O75-yG-vdW" id="0KE-YO-VWZ"/>
-                                            <outlet property="position" destination="Zde-ET-uwh" id="L50-j5-KAS"/>
+                                            <outlet property="introduce" destination="NFU-FS-Yc7" id="hqd-Fg-jTO"/>
+                                            <outlet property="name" destination="tyA-3a-3If" id="6eT-Rh-a3X"/>
+                                            <outlet property="photo" destination="O75-yG-vdW" id="6e7-M6-2Qd"/>
+                                            <outlet property="position" destination="Zde-ET-uwh" id="T0e-Ck-3rV"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y5Z-ek-mgZ" id="xnN-w0-vNp"/>
-                                    <outlet property="delegate" destination="Y5Z-ek-mgZ" id="WUl-Le-cwc"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,7 +113,7 @@
                         <viewLayoutGuide key="safeArea" id="tSl-1I-0tL"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Z6K-Ym-BO3" id="SvP-hH-X3P"/>
+                        <outlet property="topView" destination="Fjf-Bf-eyG" id="gwi-Jv-IEt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eF9-RZ-ZxT" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -10,12 +10,19 @@ import UIKit
 
 class ViewController: CollapsibleTableSectionViewController {
 
+    @IBOutlet weak var topView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.delegate = self
-        self._tableView.register(UINib(nibName: "AboutUsTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutUsTableViewCell")
-    
+        self.tableView.register(UINib(nibName: "AboutUsTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutUsTableViewCell")
+        print(topView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        
+        tableView.topAnchor.constraint(equalTo: topView.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
         
     }
 

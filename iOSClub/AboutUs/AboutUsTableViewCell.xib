@@ -63,10 +63,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="introduce" destination="Ef9-Aw-P1i" id="0bB-QB-PHW"/>
-                <outlet property="name" destination="EA5-HB-vSj" id="pNE-VE-O2C"/>
-                <outlet property="photo" destination="5rk-0S-x0o" id="ySW-Cs-tQa"/>
-                <outlet property="position" destination="8yi-N1-zrf" id="oQk-mU-4PP"/>
+                <outlet property="introduce" destination="Ef9-Aw-P1i" id="ClZ-38-hxT"/>
+                <outlet property="name" destination="EA5-HB-vSj" id="fN0-wf-ZPo"/>
+                <outlet property="photo" destination="5rk-0S-x0o" id="JV2-S3-suH"/>
+                <outlet property="position" destination="8yi-N1-zrf" id="r9l-46-7Hx"/>
             </connections>
             <point key="canvasLocation" x="112.31884057971016" y="51.5625"/>
         </tableViewCell>

@@ -7,6 +7,15 @@
 //
 
 import Foundation
+//
+//  Quiz.swift
+//  iOSClub
+//
+//  Created by 黃威愷 on 2019/7/5.
+//  Copyright © 2019 FCUiosclub. All rights reserved.
+//
+
+import Foundation
 
 class Quiz {
     var Flag:Int

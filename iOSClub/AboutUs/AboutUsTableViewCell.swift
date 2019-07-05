@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutUsTableViewCell: UITableViewCell {
+@IBDesignable class AboutUsTableViewCell: UITableViewCell {
 
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var position: UILabel!

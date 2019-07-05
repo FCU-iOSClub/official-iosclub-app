@@ -15,10 +15,13 @@
 		157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */; };
 		157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3522CC91B9001A8154 /* Assets.xcassets */; };
 		157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */; };
+		1F145A8E22CF4F900011D450 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F145A8D22CF4F900011D450 /* ScrollViewController.swift */; };
 		1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C122CDF7A400A04E92 /* NaviViewController.swift */; };
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
-		24F174CA22CF027F00C8181D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C922CF027F00C8181D /* Quiz.swift */; };
+		3B019EF522CF33E1009AD27B /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
+		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
+		3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B019EFC22CF5F07009AD27B /* Quiz.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
@@ -51,12 +54,14 @@
 		157AAC3522CC91B9001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AAC3822CC91B9001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AAC3A22CC91B9001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F145A8D22CF4F900011D450 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		1FD625C122CDF7A400A04E92 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
 		1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainMidViewController.swift; sourceTree = "<group>"; };
 		24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TimelineTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C122CEECFB00C8181D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
 		24F174C922CF027F00C8181D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		3B019EFC22CF5F07009AD27B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quiz.swift; path = iOSClub/Quiz.swift; sourceTree = SOURCE_ROOT; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
 		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 				157AAC2922CC91B7001A8154 /* Products */,
 				B8808122EA6DC3230431B49E /* Pods */,
 				8F71F182B37E41E608F40FB8 /* Frameworks */,
+				24F174CB22CF5BE000C8181D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,12 +137,21 @@
 				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
 				1FD625C122CDF7A400A04E92 /* NaviViewController.swift */,
 				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
+				3B019EFC22CF5F07009AD27B /* Quiz.swift */,
 				1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */,
 				1176271B22CE0E4500A99999 /* ActivityViewController.swift */,
 				24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */,
-				24F174C922CF027F00C8181D /* Quiz.swift */,
+				1F145A8D22CF4F900011D450 /* ScrollViewController.swift */,
 			);
 			path = iOSClub;
+			sourceTree = "<group>";
+		};
+		24F174CB22CF5BE000C8181D /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				24F174C922CF027F00C8181D /* Quiz.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		4225045222CF227300063948 /* Timeline */ = {
@@ -314,15 +329,18 @@
 				424F035022CF5AB500B5F3DA /* CollapsibleTableViewHeader.swift in Sources */,
 				4225045822CF229700063948 /* TimelineTableViewCell.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
+				3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */,
 				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
 				76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */,
+				1F145A8E22CF4F900011D450 /* ScrollViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
-				24F174CA22CF027F00C8181D /* Quiz.swift in Sources */,
 				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
 				424F034C22CF51FF00B5F3DA /* AboutUsTableViewCell.swift in Sources */,
 				424F035122CF5AB500B5F3DA /* CollapsibleTableSectionViewController.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
+				3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
+				3B019EF522CF33E1009AD27B /* AboutUsViewController.swift in Sources */,
 				76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,
 				4225045722CF229700063948 /* TimelinePoint.swift in Sources */,

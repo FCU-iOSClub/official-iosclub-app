@@ -20,9 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyboard = UIStoryboard(name: "TheMainStoryboard", bundle: nil)
+        let entryPoint = "TheMainStoryboard"
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "TheMainStoryboardVC")
+        let storyboard = UIStoryboard(name: entryPoint, bundle: nil)
+        
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "\(entryPoint)VC")
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()

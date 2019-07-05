@@ -7,27 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1176271C22CE0E4500A99999 /* ActivityStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */; };
+		1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1176271B22CE0E4500A99999 /* ActivityViewController.swift */; };
 		157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC2B22CC91B8001A8154 /* AppDelegate.swift */; };
 		157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC2D22CC91B8001A8154 /* ViewController.swift */; };
 		157AAC3122CC91B8001A8154 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC2F22CC91B8001A8154 /* Main.storyboard */; };
 		157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */; };
 		157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3522CC91B9001A8154 /* Assets.xcassets */; };
 		157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */; };
+		1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C122CDF7A400A04E92 /* NaviViewController.swift */; };
+		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
+		24F174BE22CEECB500C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174BD22CEECB500C8181D /* GamePlayingViewController.swift */; };
+		24F174C022CEECF100C8181D /* TimelineTableViewCell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */; };
+		24F174C222CEECFB00C8181D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174C122CEECFB00C8181D /* Alamofire.framework */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
-		4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */; };
-		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
-		B785B55022CDB6B700F6BAB0 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
-		B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */; };
-		B785B55422CDD3AB00F6BAB0 /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
-		3B0A463522CDB759008CCF1C /* TheMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A463422CDB759008CCF1C /* TheMainViewController.swift */; };
+		4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */; };
 		7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */; };
-		7638E40D22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */; };
+		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
+		B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03D82A904314DE6C9E4722A5 /* Pods-iOSClub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSClub.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub.release.xcconfig"; sourceTree = "<group>"; };
+		1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActivityStoryboard.storyboard; sourceTree = "<group>"; };
+		1176271B22CE0E4500A99999 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		157AAC2822CC91B7001A8154 /* iOSClub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSClub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157AAC2B22CC91B8001A8154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		157AAC2D22CC91B8001A8154 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,17 +41,22 @@
 		157AAC3522CC91B9001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AAC3822CC91B9001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AAC3A22CC91B9001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FD625C122CDF7A400A04E92 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
+		1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainMidViewController.swift; sourceTree = "<group>"; };
+		24F174BD22CEECB500C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GamePlayingViewController.swift; path = ../../GamePlayingViewController.swift; sourceTree = "<group>"; };
+		24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TimelineTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F174C122CEECFB00C8181D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
+		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
+		3B0A463422CDB759008CCF1C /* TheMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainViewController.swift; sourceTree = "<group>"; };
 		6CB93BD89AA300D0A4B5CDFA /* Pods-iOSClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub.debug.xcconfig"; sourceTree = "<group>"; };
+		7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = curriculumStoryboard.storyboard; sourceTree = "<group>"; };
+		7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = curriculumStoryboardCollectionViewController.swift; sourceTree = "<group>"; };
 		B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
 		B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		B785B55122CDD16000F6BAB0 /* AboutUsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewCell.swift; sourceTree = "<group>"; };
 		B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsData.swift; sourceTree = "<group>"; };
-		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
-		3B0A463422CDB759008CCF1C /* TheMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainViewController.swift; sourceTree = "<group>"; };
-		7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = curriculumStoryboard.storyboard; sourceTree = "<group>"; };
-		7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = curriculumStoryboardCollectionViewController.swift; sourceTree = "<group>"; };
 		E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -55,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F174C222CEECFB00C8181D /* Alamofire.framework in Frameworks */,
+				24F174C022CEECF100C8181D /* TimelineTableViewCell.framework in Frameworks */,
 				4F37ECDC93B2441DDC0AA7C7 /* Pods_iOSClub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +95,7 @@
 		157AAC2A22CC91B8001A8154 /* iOSClub */ = {
 			isa = PBXGroup;
 			children = (
+				24F174BD22CEECB500C8181D /* GamePlayingViewController.swift */,
 				157AAC2B22CC91B8001A8154 /* AppDelegate.swift */,
 				157AAC2D22CC91B8001A8154 /* ViewController.swift */,
 				157AAC2F22CC91B8001A8154 /* Main.storyboard */,
@@ -100,6 +113,10 @@
 				B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */,
 				3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */,
 				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
+				1FD625C122CDF7A400A04E92 /* NaviViewController.swift */,
+				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
+				1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */,
+				1176271B22CE0E4500A99999 /* ActivityViewController.swift */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -107,6 +124,8 @@
 		8F71F182B37E41E608F40FB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24F174C122CEECFB00C8181D /* Alamofire.framework */,
+				24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */,
 				E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */,
 			);
 			name = Frameworks;
@@ -183,6 +202,7 @@
 			files = (
 				157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */,
 				157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */,
+				1176271C22CE0E4500A99999 /* ActivityStoryboard.storyboard in Resources */,
 				157AAC3122CC91B8001A8154 /* Main.storyboard in Resources */,
 				B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */,
 				7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */,
@@ -199,17 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSClub/Pods-iOSClub-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC66A216463D1F83C2A0943D /* [CP] Check Pods Manifest.lock */ = {
@@ -237,15 +250,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B785B55022CDB6B700F6BAB0 /* AboutUsViewController.swift in Sources */,
-				B785B55422CDD3AB00F6BAB0 /* AboutUsData.swift in Sources */,
+				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
+				24F174BE22CEECB500C8181D /* GamePlayingViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
+				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
+				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,
 				B785B55222CDD16000F6BAB0 /* AboutUsTableViewCell.swift in Sources */,
-				3B0A463522CDB759008CCF1C /* TheMainViewController.swift in Sources */,
-				7638E40D22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

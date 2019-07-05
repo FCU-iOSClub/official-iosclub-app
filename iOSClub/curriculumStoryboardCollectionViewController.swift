@@ -27,6 +27,7 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         print(viewSize)
         
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
     //    layout.minimumInteritemSpacing = 0
@@ -63,7 +64,9 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
         cell.image.image = UIImage(named: imagarr[indexPath.row])
        // cell.backgroundColor = .black
         // Configure the cell
-       // cell.frame.size.width = viewSize / 3
+       // cell.frame.size.width = viewSize / 7
+        cell.image.layer.borderColor = UIColor.black.cgColor
+        cell.image.layer.borderWidth = 3
         cell.text.text = linkarr[indexPath.row]
         
         return cell

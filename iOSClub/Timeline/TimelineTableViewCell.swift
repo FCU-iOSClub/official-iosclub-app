@@ -9,13 +9,14 @@
 import UIKit
 
 
-@IBDesignable open class TimelineTableViewCell: UITableViewCell {
+open class TimelineTableViewCell: UITableViewCell {
     
     @IBOutlet weak open var titleLabel: UILabel!
     @IBOutlet weak open var descriptionLabel: UILabel!
     @IBOutlet weak open var lineInfoLabel: UILabel!
     @IBOutlet weak open var thumbnailImageView: UIImageView!
     @IBOutlet weak open var illustrationImageView: UIImageView!
+    @IBOutlet weak open var dateLabel: UILabel!
 
     @IBOutlet weak var titleLabelLeftMargin: NSLayoutConstraint!
     @IBOutlet weak var lineInfoLabelLeftMargin: NSLayoutConstraint!
@@ -71,7 +72,7 @@ import UIKit
         
         descriptionLabel.sizeToFit()
         
-        timelinePoint.position = CGPoint(x: timeline.leftMargin + timeline.width / 2, y: titleLabel.frame.origin.y + titleLabel.intrinsicContentSize.height / 2 - timelinePoint.diameter / 2)
+        timelinePoint.position = CGPoint(x: timeline.leftMargin + timeline.width / 2, y: titleLabel.frame.origin.y + titleLabel.intrinsicContentSize.height - timelinePoint.diameter / 2)
 
         timeline.start = CGPoint(x: timelinePoint.position.x + timelinePoint.diameter / 2, y: 0)
         timeline.middle = CGPoint(x: timeline.start.x, y: timelinePoint.position.y)
@@ -88,10 +89,10 @@ import UIKit
     fileprivate func drawBubble() {
         let offset: CGFloat = 16
         let bubbleRect = CGRect(
-            x: timelinePoint.position.x + timelinePoint.diameter + timeline.width + offset,
-            y: timelinePoint.position.y - timelinePoint.diameter - offset / 2,
-            width: titleLabel.intrinsicContentSize.width + offset,
-            height: titleLabel.intrinsicContentSize.height + offset)
+            x: timelinePoint.position.x + timelinePoint.diameter + timeline.width + offset - 3,
+            y: timelinePoint.position.y - timelinePoint.diameter - offset ,
+            width: titleLabel.intrinsicContentSize.width >= dateLabel.intrinsicContentSize.width ? titleLabel.intrinsicContentSize.width + offset:dateLabel.intrinsicContentSize.width + offset,
+            height: titleLabel.intrinsicContentSize.height + offset + offset)
         
         let path = UIBezierPath(roundedRect: bubbleRect, cornerRadius: bubbleRadius)
         let startPoint = CGPoint(x: bubbleRect.origin.x, y: bubbleRect.origin.y + bubbleRect.height / 2 - 8)

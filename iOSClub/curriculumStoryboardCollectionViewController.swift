@@ -64,6 +64,8 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
        // cell.backgroundColor = .black
         // Configure the cell
        // cell.frame.size.width = viewSize / 3
+        cell.image.layer.borderColor = UIColor.black.cgColor
+        cell.image.layer.borderWidth = 3
         cell.text.text = linkarr[indexPath.row]
         
         return cell

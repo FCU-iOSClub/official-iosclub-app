@@ -15,17 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyboard = UIStoryboard(name: "curriculumStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "ActivityStoryboard", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "curriculumStoryboard")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "ActivityStoryboardVC")
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
+        
+        //延遲loading
+        Thread.sleep(forTimeInterval: 10.0)
         
         return true
         

@@ -9,6 +9,7 @@
 import UIKit
 
 class CurriculumCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var text: UITextView!
     
     @IBOutlet weak var image: UIImageView!
 }

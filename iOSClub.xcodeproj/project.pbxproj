@@ -20,7 +20,6 @@
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		24F174C222CEECFB00C8181D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174C122CEECFB00C8181D /* Alamofire.framework */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
-		24F174CA22CF027F00C8181D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C922CF027F00C8181D /* Quiz.swift */; };
 		24F174CD22CF5C4200C8181D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174CC22CF5C4200C8181D /* Quiz.swift */; };
 		3B019EF522CF33E1009AD27B /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
 		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
@@ -311,7 +310,6 @@
 				76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */,
 				1F145A8E22CF4F900011D450 /* ScrollViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
-				24F174CA22CF027F00C8181D /* Quiz.swift in Sources */,
 				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
 				3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */,

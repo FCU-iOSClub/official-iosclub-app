@@ -20,9 +20,10 @@
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		24F174C222CEECFB00C8181D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F174C122CEECFB00C8181D /* Alamofire.framework */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
+		24F174CA22CF027F00C8181D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C922CF027F00C8181D /* Quiz.swift */; };
+		24F174CD22CF5C4200C8181D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174CC22CF5C4200C8181D /* Quiz.swift */; };
 		3B019EF522CF33E1009AD27B /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B54F22CDB6B700F6BAB0 /* AboutUsViewController.swift */; };
 		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
-		24F174CA22CF027F00C8181D /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C922CF027F00C8181D /* Quiz.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
 		3B0A463322CDB70A008CCF1C /* TheMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */; };
@@ -59,6 +60,7 @@
 		24F174C122CEECFB00C8181D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
 		24F174C922CF027F00C8181D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		24F174CC22CF5C4200C8181D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
 		3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TheMainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				157AAC2922CC91B7001A8154 /* Products */,
 				B8808122EA6DC3230431B49E /* Pods */,
 				8F71F182B37E41E608F40FB8 /* Frameworks */,
+				24F174CB22CF5BE000C8181D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,8 +140,17 @@
 				1176271B22CE0E4500A99999 /* ActivityViewController.swift */,
 				24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */,
 				1F145A8D22CF4F900011D450 /* ScrollViewController.swift */,
+				24F174CC22CF5C4200C8181D /* Quiz.swift */,
 			);
 			path = iOSClub;
+			sourceTree = "<group>";
+		};
+		24F174CB22CF5BE000C8181D /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				24F174C922CF027F00C8181D /* Quiz.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		4225045222CF227300063948 /* Timeline */ = {
@@ -290,6 +302,7 @@
 			files = (
 				B76239FB22CEF93900D9A2DC /* AboutUsViewController.swift in Sources */,
 				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
+				24F174CD22CF5C4200C8181D /* Quiz.swift in Sources */,
 				24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
 				4225045822CF229700063948 /* TimelineTableViewCell.swift in Sources */,

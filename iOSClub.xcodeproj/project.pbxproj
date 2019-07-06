@@ -119,7 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				424F034922CF51D700B5F3DA /* AboutUs */,
+				1F26B2B422D03E1E005D20F6 /* Curriculum */,
 				4225045222CF227300063948 /* Timeline */,
+				1F26B2B322D03DBE005D20F6 /* Main */,
 				157AAC2B22CC91B8001A8154 /* AppDelegate.swift */,
 				157AAC2D22CC91B8001A8154 /* ViewController.swift */,
 				157AAC2F22CC91B8001A8154 /* Main.storyboard */,
@@ -129,20 +131,34 @@
 				157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */,
 				3B0A462C22CDB162008CCF1C /* GameViewController.swift */,
 				3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */,
-				7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */,
-				7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */,
-				76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */,
-				3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */,
-				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
-				1FD625C122CDF7A400A04E92 /* NaviViewController.swift */,
-				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
 				3B019EFC22CF5F07009AD27B /* Quiz.swift */,
 				1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */,
 				1176271B22CE0E4500A99999 /* ActivityViewController.swift */,
 				24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */,
-				1F145A8D22CF4F900011D450 /* ScrollViewController.swift */,
 			);
 			path = iOSClub;
+			sourceTree = "<group>";
+		};
+		1F26B2B322D03DBE005D20F6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B0A463222CDB70A008CCF1C /* TheMainStoryboard.storyboard */,
+				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
+				1FD625C122CDF7A400A04E92 /* NaviViewController.swift */,
+				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
+				1F145A8D22CF4F900011D450 /* ScrollViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1F26B2B422D03E1E005D20F6 /* Curriculum */ = {
+			isa = PBXGroup;
+			children = (
+				7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */,
+				7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */,
+				76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */,
+			);
+			path = Curriculum;
 			sourceTree = "<group>";
 		};
 		24F174CB22CF5BE000C8181D /* Recovered References */ = {

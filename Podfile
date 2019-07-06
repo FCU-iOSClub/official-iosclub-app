@@ -6,6 +6,7 @@ target 'iOSClub' do
   use_frameworks!
 
   pod 'Alamofire'
+  pod 'ImageSlideshow', '~> 1.8'
   
   # Pods for iOSClub
 

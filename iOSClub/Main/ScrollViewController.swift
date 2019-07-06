@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageSlideshow
 
 class ScrollViewController: UIViewController ,UIScrollViewDelegate{
 

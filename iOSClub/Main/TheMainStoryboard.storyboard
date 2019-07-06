@@ -407,36 +407,30 @@
             </objects>
             <point key="canvasLocation" x="513" y="92"/>
         </scene>
-        <!--Scroll View Controller-->
+        <!--Image Slideshow View Controller-->
         <scene sceneID="ATK-sS-nLX">
             <objects>
-                <viewController id="FJB-ng-Igk" customClass="ScrollViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FJB-ng-Igk" customClass="ImageSlideshowViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A27-bN-LdZ">
                         <rect key="frame" x="0.0" y="0.0" width="333" height="149"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pYW-KJ-Lg6">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6N-5l-dpE" customClass="ImageSlideshow" customModule="ImageSlideshow">
                                 <rect key="frame" x="0.0" y="0.0" width="333" height="149"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="TQn-T4-t3P">
-                                        <rect key="frame" x="147" y="119" width="39" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </pageControl>
-                                </subviews>
-                            </scrollView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="pYW-KJ-Lg6" secondAttribute="trailing" id="P66-NW-QGl"/>
-                            <constraint firstItem="pYW-KJ-Lg6" firstAttribute="top" secondItem="A27-bN-LdZ" secondAttribute="top" id="T0Z-3a-iz4"/>
-                            <constraint firstAttribute="bottom" secondItem="pYW-KJ-Lg6" secondAttribute="bottom" id="Xqe-PE-mal"/>
-                            <constraint firstItem="pYW-KJ-Lg6" firstAttribute="leading" secondItem="A27-bN-LdZ" secondAttribute="leading" id="p0t-Jc-VXY"/>
+                            <constraint firstItem="h6N-5l-dpE" firstAttribute="top" secondItem="A27-bN-LdZ" secondAttribute="top" id="LuC-UM-XBH"/>
+                            <constraint firstAttribute="trailing" secondItem="h6N-5l-dpE" secondAttribute="trailing" id="qOV-v1-vud"/>
+                            <constraint firstAttribute="bottom" secondItem="h6N-5l-dpE" secondAttribute="bottom" id="qSh-q8-cZS"/>
+                            <constraint firstItem="h6N-5l-dpE" firstAttribute="leading" secondItem="A27-bN-LdZ" secondAttribute="leading" id="zuW-9c-2dc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DMS-rL-ylG"/>
                     </view>
                     <connections>
-                        <outlet property="pageControl" destination="TQn-T4-t3P" id="vQ4-fc-ruR"/>
-                        <outlet property="scrollView" destination="pYW-KJ-Lg6" id="rx9-gH-f9L"/>
+                        <outlet property="slidesView" destination="h6N-5l-dpE" id="lh8-ZA-shJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZxI-AY-P1v" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -25,24 +25,11 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(viewSize)
+//        print(viewSize)
+        layout.sectionInset.left = viewSize/25
+        layout.sectionInset.right = viewSize/25
         
-        let flow = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout // If you create collectionView programmatically then just create this flow by UICollectionViewFlowLayout() and init a collectionView by this flow.
-        
-        let itemSpacing: CGFloat = 5
-        let itemsInOneLine: CGFloat = 3
-        let width = UIScreen.main.bounds.size.width
-        //flow.sectionInset = UIEdgeInsetsMake(100, 0, 0, 0)
-        //collectionView.frame.width is the same as  UIScreen.main.bounds.size.width here.
-      //  flow.itemSize = CGSize(width: floor(width/3), height: width/4)
-        //flow.minimumInteritemSpacing = 3
-       // flow.minimumLineSpacing = 20
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-    //    layout.minimumInteritemSpacing = 0
-        // Register cell classes
-
-        // Do any additional setup after loading the view.
+      
     }
 
     /*

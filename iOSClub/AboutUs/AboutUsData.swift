@@ -13,8 +13,7 @@ class Cadre {
     var position:String!
     var name:String!
     var introduce:String!
-
-    init(_ photo:String,_ position:String,_ name:String,_ introduce:String) {
+    init(_ photo:String, _ position:String,_ name:String,_ introduce:String) {
         self.photo = photo
         self.position = position
         self.name = name
@@ -44,5 +43,18 @@ class Cadre {
     }
     func getIntroduce()->String{
         return self.introduce
+    }
+}
+
+class Cadres {
+    var title:String!
+    var items:[Cadre]
+    
+    init(
+        _ title:String,
+        _ items:[Cadre]
+    ) {
+        self.title = title
+        self.items = items
     }
 }

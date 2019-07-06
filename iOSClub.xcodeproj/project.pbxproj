@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,10 @@
 		157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 157AAC3222CC91B8001A8154 /* iOSClub.xcdatamodeld */; };
 		157AAC3622CC91B9001A8154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3522CC91B9001A8154 /* Assets.xcassets */; };
 		157AAC3922CC91B9001A8154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157AAC3722CC91B9001A8154 /* LaunchScreen.storyboard */; };
-		1F145A8E22CF4F900011D450 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F145A8D22CF4F900011D450 /* ScrollViewController.swift */; };
 		1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C122CDF7A400A04E92 /* NaviViewController.swift */; };
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
+		1FFDDBE722D07F300029D317 /* ImageSlideshowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDDBE622D07F300029D317 /* ImageSlideshowViewController.swift */; };
+		1FFDDBE922D0A22F0029D317 /* TheMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDDBE822D0A22F0029D317 /* TheMainTableViewController.swift */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
 		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
 		3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B019EFC22CF5F07009AD27B /* Quiz.swift */; };
@@ -55,9 +56,10 @@
 		157AAC3522CC91B9001A8154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157AAC3822CC91B9001A8154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157AAC3A22CC91B9001A8154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F145A8D22CF4F900011D450 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		1FD625C122CDF7A400A04E92 /* NaviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviViewController.swift; sourceTree = "<group>"; };
 		1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainMidViewController.swift; sourceTree = "<group>"; };
+		1FFDDBE622D07F300029D317 /* ImageSlideshowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSlideshowViewController.swift; sourceTree = "<group>"; };
+		1FFDDBE822D0A22F0029D317 /* TheMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMainTableViewController.swift; sourceTree = "<group>"; };
 		24F174BF22CEECF100C8181D /* TimelineTableViewCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TimelineTableViewCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C122CEECFB00C8181D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
@@ -151,7 +153,8 @@
 				3B0A463422CDB759008CCF1C /* TheMainViewController.swift */,
 				1FD625C122CDF7A400A04E92 /* NaviViewController.swift */,
 				1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */,
-				1F145A8D22CF4F900011D450 /* ScrollViewController.swift */,
+				1FFDDBE622D07F300029D317 /* ImageSlideshowViewController.swift */,
+				1FFDDBE822D0A22F0029D317 /* TheMainTableViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -311,16 +314,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iOSClub/Pods-iOSClub-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSClub/Pods-iOSClub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-iOSClub/Pods-iOSClub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -355,13 +353,14 @@
 				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
 				24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
+				1FFDDBE722D07F300029D317 /* ImageSlideshowViewController.swift in Sources */,
 				424F035022CF5AB500B5F3DA /* CollapsibleTableViewHeader.swift in Sources */,
 				4225045822CF229700063948 /* TimelineTableViewCell.swift in Sources */,
 				157AAC2E22CC91B8001A8154 /* ViewController.swift in Sources */,
 				3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */,
 				1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */,
+				1FFDDBE922D0A22F0029D317 /* TheMainTableViewController.swift in Sources */,
 				76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */,
-				1F145A8E22CF4F900011D450 /* ScrollViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
 				424F034C22CF51FF00B5F3DA /* AboutUsTableViewCell.swift in Sources */,

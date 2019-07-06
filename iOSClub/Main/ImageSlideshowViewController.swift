@@ -10,19 +10,27 @@ import UIKit
 import ImageSlideshow
 
 class ImageSlideshowViewController: UIViewController {
-    @IBOutlet weak var slidesView: ImageSlideshow!
+    @IBOutlet weak var slideView: ImageSlideshow!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        slidesView.slideshowInterval = 3
-        slidesView.setImageInputs([
+        slideView.slideshowInterval = 3
+        slideView.setImageInputs([
             ImageSource(image: UIImage(named: "劉祐炘")!),
-            ImageSource(image: UIImage(named: "陳語涵")!)
+            ImageSource(image: UIImage(named: "陳語涵")!),
+            ImageSource(image: UIImage(named: "劉祐炘")!),
+            ImageSource(image: UIImage(named: "劉祐炘")!),
+            ImageSource(image: UIImage(named: "劉祐炘")!),
+            ImageSource(image: UIImage(named: "劉祐炘")!)
             ])
-
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ImageSlideshowViewController.didTap))
+        slideView.addGestureRecognizer(gestureRecognizer)
         // Do any additional setup after loading the view.
     }
     
+    @objc func didTap() {
+        slideView.presentFullScreenController(from: self)
+    }
 
     /*
     // MARK: - Navigation

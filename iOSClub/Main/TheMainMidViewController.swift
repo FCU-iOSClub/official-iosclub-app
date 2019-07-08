@@ -29,18 +29,41 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         guard let button = sender as? UIButton else {
             return
         }
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.restrictRotation = .portrait
+        }
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        
+        
+        
+        
+        
+        self.navigationItem.title = button.titleLabel?.text
         switch button.tag {
         case 0:
+            self.navigationItem.title = "iOS Club"
             changeContainer(to: HomeViewController)
             break
         case 3:
             changeContainer(to: ActivityViewController)
             break
         case 4:
+            button.backgroundColor = .cyan
             changeContainer(to: CurriculumViewController)
             break
         case 8:
+            
+            if let delegate = UIApplication.shared.delegate as? AppDelegate {
+                delegate.restrictRotation = .landscapeRight
+            }
+            let value = UIInterfaceOrientation.landscapeRight.rawValue
+            UIDevice.current.setValue(value, forKey: "orientation")
+            
             changeContainer(to: GameViewController)
+            break
+        case 9:
+            changeContainer(to: AboutUsViewController)
             break
         default:
             changeContainer(to: HomeViewController)
@@ -56,6 +79,12 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         MenuChange = 0
         
     }
+//    override var shouldAutorotate: Bool {
+//        return true
+//    }
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+//        return .landscapeRight
+//    }
     func changeContainer(to newViewController:UIViewController){
         if self.selectedViewController == newViewController{
             return
@@ -71,6 +100,10 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         
         self.view.setNeedsLayout()
         self.view.layoutIfNeeded()
+        self.containerView.setNeedsLayout()
+        self.containerView.layoutIfNeeded()
+        self.MenuView.setNeedsLayout()
+        self.MenuView.layoutIfNeeded()
         
         self.containerView.center.x -= self.MenuView.frame.width
         self.containerView.alpha = 0.2

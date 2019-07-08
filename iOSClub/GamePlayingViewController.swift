@@ -9,6 +9,8 @@
 import UIKit
 
 class GamePlayingViewController: UIViewController {
+    @IBOutlet weak var StackOutlet: UIStackView!
+    
     var Questions:[Quiz] = [Quiz(name:"Google",description: "字母的顏色錯了"),Quiz(name:"百事",description: "紅藍傻傻分不清"),Quiz(name: "Windows",description: "想不到吧～顏色對調啦！"),Quiz(name:"Nestle",description: "鳥只有兩隻啦"),Quiz(name:"BMW",description: "藍白顏色對調了"),Quiz(name:"mutella",description: "雀巢飲料真好喝")]
     var index = 0
     var backgroundWrong = UIColor(displayP3Red: 255, green: 0, blue: 0, alpha: 1.0)
@@ -31,9 +33,12 @@ class GamePlayingViewController: UIViewController {
     @IBOutlet weak var ScoreLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let width = UIScreen.main.bounds.width
+        print(width)
         choosed = 0
         presscount = 0
-        ScoreLabel.text = String(score)
+        ScoreLabel.text = "分數: " + String(score) 
         index = Int.random(in: 0...Questions.count-1)
         SetQuestions(quiz: Questions[index])
         AnswerImageLeftBackground.backgroundColor = .white
@@ -103,7 +108,7 @@ class GamePlayingViewController: UIViewController {
         }else if !WeatherUserIsRight && choosed == 0 && presscount == 1{
             choosed = 1
         }
-        ScoreLabel.text = String(score)
+        ScoreLabel.text = "分數: " + String(score)
         OutcomeImageRight.isHidden = false
         OutcomeImageLeft.isHidden = false
         AfterAnswerLabel.isHidden = false
@@ -140,7 +145,7 @@ class GamePlayingViewController: UIViewController {
         }else if !WeatherUserIsRight && choosed == 0 && presscount == 1{
             choosed = 1
         }
-        ScoreLabel.text = String(score)
+        ScoreLabel.text = "分數: " + String(score)
         OutcomeImageRight.isHidden = false
         OutcomeImageLeft.isHidden = false
         AfterAnswerLabel.isHidden = false

@@ -10,9 +10,75 @@ import UIKit
 
 class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     
-    
+    var selectedViewController:UIViewController = UIViewController()
+    var HomeViewController:TheMainTableViewController = TheMainTableViewController()
+    lazy var AboutUsViewController:AboutUsViewController = {
+        return UIStoryboard(name: "AboutUsStoryboard", bundle: nil).instantiateViewController(withIdentifier: "AboutUsStoryboardID") as! AboutUsViewController
+    }()
+    lazy var CurriculumViewController:curriculumStoryboardCollectionViewController = {
+        return UIStoryboard(name: "curriculumStoryboard", bundle: nil).instantiateViewController(withIdentifier: "curriculumStoryboard") as! curriculumStoryboardCollectionViewController
+    }()
+    lazy var ActivityViewController:ActivityViewController = {
+        return UIStoryboard(name: "ActivityStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ActivityStoryboardVC") as! ActivityViewController
+    }()
+    lazy var GameViewController:GameViewController = {
+        return UIStoryboard(name: "GameStoryboard", bundle: nil).instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
+    }()
+    @IBAction func MenuActions(_ sender: Any) {
+        
+        guard let button = sender as? UIButton else {
+            return
+        }
+        switch button.tag {
+        case 0:
+            changeContainer(to: HomeViewController)
+            break
+        case 3:
+            changeContainer(to: ActivityViewController)
+            break
+        case 4:
+            changeContainer(to: CurriculumViewController)
+            break
+        case 8:
+            changeContainer(to: GameViewController)
+            break
+        default:
+            changeContainer(to: HomeViewController)
+            break
+        }
+        UIView.animate(withDuration: 0.4){
+            self.containerView.center.x += self.MenuView.frame.width
+            self.MenuView.alpha = 0
+            self.containerView.alpha = 1
+            self.MenuView.center.x += self.MenuView.frame.width
+        }
+        self.MenuXpos += Int(self.MenuView.frame.width)
+        MenuChange = 0
+        
+    }
+    func changeContainer(to newViewController:UIViewController){
+        if self.selectedViewController == newViewController{
+            return
+        }
+        self.selectedViewController.willMove(toParent: nil)
+        self.selectedViewController.view.removeFromSuperview()
+        self.selectedViewController.removeFromParent()
+        
+        self.addChild(newViewController)
+        self.containerView.addSubview(newViewController.view)
+        newViewController.view.frame = self.containerView.bounds
+        newViewController.didMove(toParent: self)
+        
+        self.view.setNeedsLayout()
+        self.view.layoutIfNeeded()
+        
+        self.containerView.center.x -= self.MenuView.frame.width
+        self.containerView.alpha = 0.2
+        self.selectedViewController = newViewController
+    }
     
     override func viewDidLoad() {
+        
         self.MenuXpos = Int(UIScreen.main.bounds.width + self.MenuView.frame.width / 2 + 1)
         
         super.viewDidLoad()
@@ -39,17 +105,20 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         if MenuChange == 0{
             UIView.animate(withDuration: 0.4){
                 self.containerView.center.x -= self.MenuView.frame.width
-                self.MenuView.isHidden = false
+                self.MenuView.alpha = 1
+                self.containerView.alpha = 0.2
                 self.MenuView.center.x -= self.MenuView.frame.width
-                self.MenuXpos -= Int(self.MenuView.frame.width)
             }
+            self.MenuXpos -= Int(self.MenuView.frame.width)
             MenuChange = 1
         }else{
             UIView.animate(withDuration: 0.4){
                 self.containerView.center.x += self.MenuView.frame.width
+                self.MenuView.alpha = 0
+                self.containerView.alpha = 1
                 self.MenuView.center.x += self.MenuView.frame.width
-                self.MenuXpos += Int(self.MenuView.frame.width)
             }
+            self.MenuXpos += Int(self.MenuView.frame.width)
             MenuChange = 0
         }
     }
@@ -65,8 +134,13 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     @IBOutlet var logoutButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
-        MenuView.isHidden = true
+        MenuView.alpha = 0
         
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ContainerSegue"{
+            HomeViewController = segue.destination as! TheMainTableViewController
+        }
     }
     /*
     // MARK: - Navigation

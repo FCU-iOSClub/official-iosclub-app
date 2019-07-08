@@ -12,6 +12,10 @@ class GameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //(UIApplication.shared.delegate as! AppDelegate).restrictRotation = .all
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }

@@ -14,17 +14,20 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var restrictRotation:UIInterfaceOrientationMask = .portrait
 
-
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return restrictRotation
+    }
+   
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-
-        let storyboard = UIStoryboard(name: "GameStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "TheMainStoryboard", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "GameViewController")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "TheMainStoryboardVC")
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()

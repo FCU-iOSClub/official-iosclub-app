@@ -30,10 +30,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="G7k-Hp-ZvR">
-                                <rect key="frame" x="134.5" y="27" width="627.00000000000023" height="236"/>
+                                <rect key="frame" x="134.5" y="137" width="627" height="16"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgD-Y6-bnk">
-                                <rect key="frame" x="343" y="263" width="264" height="53"/>
+                                <rect key="frame" x="440" y="153" width="70" height="22"/>
                                 <state key="normal" title="Button" image="開始按鈕"/>
                                 <connections>
                                     <segue destination="bGL-UD-leW" kind="show" id="lAb-IG-X0Q"/>
@@ -136,20 +136,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="nzj-Er-ie6">
-                                <rect key="frame" x="0.0" y="12" width="207.00000000000023" height="67"/>
+                                <rect key="frame" x="0.0" y="12" width="207" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="oIj-BP-YdT"/>
                                     <constraint firstAttribute="width" constant="207" id="yQp-br-aHf"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="答對圖片" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-13-Xiu">
-                                <rect key="frame" x="188.5" y="327" width="71" height="71"/>
+                                <rect key="frame" x="216" y="327" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AC8-13-Xiu" secondAttribute="height" multiplier="1:1" id="KkN-xY-pZ8"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="答錯圖片" translatesAutoresizingMaskIntoConstraints="NO" id="0Jk-Eu-qt4">
-                                <rect key="frame" x="636.5" y="327" width="71" height="71"/>
+                                <rect key="frame" x="664" y="327" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Jk-Eu-qt4" secondAttribute="height" multiplier="1:1" id="yw2-kb-cOe"/>
                                 </constraints>
@@ -242,7 +242,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-Bb-Uc5">
-                                <rect key="frame" x="192.5" y="58" width="511.00000000000023" height="128"/>
+                                <rect key="frame" x="192.5" y="58" width="511" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="511" id="Lt2-bX-wjn"/>
                                     <constraint firstAttribute="height" constant="128" id="W83-CU-rep"/>

@@ -16,6 +16,8 @@ class GamePlayingViewController: UIViewController {
     var WeatherUserIsRight = false
     var score = 0
     var QuestionCount = 0
+    var choosed = 0
+    var presscount = 0
     @IBOutlet weak var AnswerImageRightBackground: UIView!
     @IBOutlet weak var AnswerImageLeftBackground: UIView!
     @IBOutlet weak var AfterAnswerLabel: UILabel!
@@ -29,6 +31,8 @@ class GamePlayingViewController: UIViewController {
     @IBOutlet weak var ScoreLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        choosed = 0
+        presscount = 0
         ScoreLabel.text = String(score)
         index = Int.random(in: 0...Questions.count-1)
         SetQuestions(quiz: Questions[index])
@@ -45,10 +49,18 @@ class GamePlayingViewController: UIViewController {
     }
     @IBAction func RefreshButton(_ sender: Any) {
         QuestionCount += 1
-        if QuestionCount == 10{
-            ToEndgameView()
+        if choosed == 0{
+            let Action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            let Alert = UIAlertController(title: "等等！", message: "你還沒答題啊", preferredStyle: .alert)
+            Alert.addAction(Action)
+            present(Alert, animated: true, completion: nil)
+        }else{
+            if QuestionCount == 10{
+                ToEndgameView()
+            }
+            self.viewDidLoad()
         }
-        self.viewDidLoad()
+        
     }
     func ToEndgameView(){
         let DisVC = storyboard?.instantiateViewController(withIdentifier: "EndGame") as! GameFinishViewController
@@ -61,6 +73,8 @@ class GamePlayingViewController: UIViewController {
     @IBAction func CorrectOrIncorrectJudge1(_ sender: UITapGestureRecognizer) {
         sender.numberOfTapsRequired = 1
         sender.numberOfTouchesRequired = 1
+        presscount += 1
+        
         
         if(Questions[index].Name[0].contains("真")){
             OutcomeImageLeft.image = UIImage(named: "答對圖片")
@@ -83,8 +97,11 @@ class GamePlayingViewController: UIViewController {
             })
             WeatherUserIsRight = true
         }
-        if WeatherUserIsRight{
+        if WeatherUserIsRight && choosed == 0 && presscount == 1{
+            choosed = 1
             score += 100
+        }else if !WeatherUserIsRight && choosed == 0 && presscount == 1{
+            choosed = 1
         }
         ScoreLabel.text = String(score)
         OutcomeImageRight.isHidden = false
@@ -94,6 +111,7 @@ class GamePlayingViewController: UIViewController {
     @IBAction func CorrectOrIncorrectJudge(_ sender: UITapGestureRecognizer) {
         sender.numberOfTapsRequired = 1
         sender.numberOfTouchesRequired = 1
+        presscount += 1
         
         if(Questions[index].Name[0].contains("真")){
             OutcomeImageLeft.image = UIImage(named: "答對圖片")
@@ -116,8 +134,11 @@ class GamePlayingViewController: UIViewController {
             })
             WeatherUserIsRight = false
         }
-        if WeatherUserIsRight{
+        if WeatherUserIsRight && choosed == 0 && presscount == 1{
+            choosed = 1
             score += 100
+        }else if !WeatherUserIsRight && choosed == 0 && presscount == 1{
+            choosed = 1
         }
         ScoreLabel.text = String(score)
         OutcomeImageRight.isHidden = false

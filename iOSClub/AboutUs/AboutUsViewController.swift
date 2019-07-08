@@ -58,16 +58,14 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
                                     item["introduce"] ?? "介紹"
                                 ))
                             }
-                                
-                                self.cadres.append(Cadres(
-                                    generation["num"] as? String ?? "屆數",
-                                    temp
-                                ))
-                                //            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),                            }
-                            
-                            self.tableView.reloadData()
+                            self.cadres.append(Cadres(
+                                generation["num"] as? String ?? "屆數",
+                                temp
+                            ))
                         }
                     }
+                    self.tableView.reloadData()
+                    
                 }
             }
         }

@@ -24,6 +24,9 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     lazy var GameViewController:GameViewController = {
         return UIStoryboard(name: "GameStoryboard", bundle: nil).instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
     }()
+    lazy var XcodeViewController:UITableViewController = {
+        return UIStoryboard(name: "xcodeStoryboard", bundle: nil).instantiateViewController(withIdentifier: "xcodeVC") as! UITableViewController
+    }()
     @IBAction func MenuActions(_ sender: Any) {
         
         guard let button = sender as? UIButton else {
@@ -51,6 +54,10 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         case 4:
             button.backgroundColor = .cyan
             changeContainer(to: CurriculumViewController)
+            break
+        case 7:
+            //button.backgroundColor = .cyan
+            changeContainer(to: XcodeViewController)
             break
         case 8:
             

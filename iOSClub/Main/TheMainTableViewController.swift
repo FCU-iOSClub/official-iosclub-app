@@ -27,8 +27,10 @@ class TheMainTableViewController: UITableViewController{
             return
         }
         if UIApplication.shared.canOpenURL(url){
+            print("here")
             UIApplication.shared.open(url)
         }else{
+            print("failed")
             UIApplication.shared.open(URL(string: "https://www.facebook.com/FCU.iOSClub/")!)
         }
         

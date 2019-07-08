@@ -16,15 +16,24 @@ class TheMainTableViewController: UITableViewController{
             print("URLError")
             return
         }
+        
+        print(UIApplication.shared.canOpenURL(url))
         UIApplication.shared.open(url)
         //mailto:iosclub@mail.fcu.edu.tw
     }
     @IBAction func fbButton(_ sender: Any) {
-        guard let url = URL(string: "https://www.facebook.com/FCU.iOSClub") else {
+        guard let url = URL(string: "fb://page/?id=298555283953840") else {
             print("URLError")
             return
         }
-        UIApplication.shared.open(url)
+        if UIApplication.shared.canOpenURL(url){
+            print("here")
+            UIApplication.shared.open(url)
+        }else{
+            print("failed")
+            UIApplication.shared.open(URL(string: "https://www.facebook.com/FCU.iOSClub/")!)
+        }
+        
     }
     @IBAction func igButton(_ sender: Any) {
         guard let url = URL(string: "https://www.instagram.com/fcu.iosclub/") else {

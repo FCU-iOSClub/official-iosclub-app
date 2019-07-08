@@ -98,6 +98,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Fuc-C7-bUO" secondAttribute="trailing" id="zNO-c7-V59"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="curr" destination="XZ0-5d-mom" id="xdo-XE-lZH"/>
+                                    <outlet property="date" destination="01a-Z1-CMG" id="JYh-jU-Kyc"/>
                                     <outlet property="image" destination="lG6-Fy-4V4" id="IeS-PN-WuX"/>
                                     <outlet property="text" destination="Fuc-C7-bUO" id="UOn-6c-uhk"/>
                                 </connections>

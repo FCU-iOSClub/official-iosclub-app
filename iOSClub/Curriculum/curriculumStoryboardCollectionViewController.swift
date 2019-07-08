@@ -9,7 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "Cell"
-var imagarr:[String] = ["第一堂社課","第二堂社課","第三堂社課","第五堂社課","第六堂社課","第七堂社課"]
+var currarr:[String] = ["第一堂社課","第二堂社課","第三堂社課","第五堂社課","第六堂社課","第七堂社課"]
 var datearr:[String] = ["2019.05.31","2019.06.04","2019.06.10","2019.06.19","2019.06.22","2019.06.30"]
 var linkarr:[String] = [
     "https://drive.google.com/file/d/1M8yP804MCF_wmtaVeOCTk-0_FEPs0ghe/view",
@@ -59,12 +59,10 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CurriculumCollectionViewCell
         //cell.image.image = UIImage(named: "課程背景") //圖像不更動
-       // cell.backgroundColor = .black
-        // Configure the cell
-       // cell.frame.size.width = viewSize / 7
-        cell.image.layer.borderColor = UIColor.black.cgColor
-        cell.image.layer.borderWidth = 3
-        cell.text.text = linkarr[indexPath.row]
+
+        cell.date.text = datearr[indexPath.row] //日期
+        cell.curr.text = currarr[indexPath.row] //課程
+        cell.text.text = linkarr[indexPath.row] //網址
         
         return cell
     }

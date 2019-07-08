@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class AboutUsViewController: CollapsibleTableSectionViewController {
     
     @IBOutlet weak var topView: UIView!
@@ -17,6 +17,14 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.delegate = self
         self.tableView.register(UINib(nibName: "AboutUsTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutUsTableViewCell")
+        
+        Alamofire.request("http://127.0.0.1:2914").responseJSON{res in
+            if let result = res.result.value{
+                
+                
+            }
+        }
+    
     }
     
     override func didReceiveMemoryWarning() {

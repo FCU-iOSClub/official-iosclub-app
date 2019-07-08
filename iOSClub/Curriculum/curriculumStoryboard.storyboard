@@ -38,7 +38,7 @@
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                         </textView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="第一節" translatesAutoresizingMaskIntoConstraints="NO" id="lG6-Fy-4V4">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="課程背景" translatesAutoresizingMaskIntoConstraints="NO" id="lG6-Fy-4V4">
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                             <userDefinedRuntimeAttributes>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -46,15 +46,54 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="課程pdf" translatesAutoresizingMaskIntoConstraints="NO" id="lsp-xY-AI0">
+                                            <rect key="frame" x="20" y="84" width="33" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="DKx-Sd-95O"/>
+                                                <constraint firstAttribute="width" constant="33" id="lOC-N3-F5K"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4o-2b-tzH">
+                                            <rect key="frame" x="41.5" y="61.5" width="57" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01a-Z1-CMG">
+                                            <rect key="frame" x="44" y="34" width="53" height="13"/>
+                                            <string key="text">2019.05.31
+</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一堂社課" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZ0-5d-mom">
+                                            <rect key="frame" x="63" y="93.5" width="61.5" height="13.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="lsp-xY-AI0" secondAttribute="bottom" constant="12" id="1XO-Xy-Y8B"/>
                                     <constraint firstAttribute="bottom" secondItem="lG6-Fy-4V4" secondAttribute="bottom" id="7Up-wY-cQT"/>
                                     <constraint firstAttribute="bottom" secondItem="Fuc-C7-bUO" secondAttribute="bottom" id="B0T-5H-5aa"/>
+                                    <constraint firstItem="h4o-2b-tzH" firstAttribute="centerX" secondItem="Avl-Hy-AUK" secondAttribute="centerX" id="FyW-FB-QTC"/>
+                                    <constraint firstItem="h4o-2b-tzH" firstAttribute="centerY" secondItem="Avl-Hy-AUK" secondAttribute="centerY" id="GvO-K2-fwR"/>
                                     <constraint firstItem="lG6-Fy-4V4" firstAttribute="leading" secondItem="Avl-Hy-AUK" secondAttribute="leading" id="JAL-js-IRd"/>
+                                    <constraint firstItem="XZ0-5d-mom" firstAttribute="top" secondItem="h4o-2b-tzH" secondAttribute="bottom" constant="15" id="Kpf-re-w62"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="XZ0-5d-mom" secondAttribute="bottom" constant="25" id="MBd-DL-tjz"/>
+                                    <constraint firstItem="01a-Z1-CMG" firstAttribute="top" secondItem="Avl-Hy-AUK" secondAttribute="topMargin" constant="26" id="ONw-m8-6Rh"/>
+                                    <constraint firstItem="lsp-xY-AI0" firstAttribute="leading" secondItem="Avl-Hy-AUK" secondAttribute="leadingMargin" constant="12" id="aor-ci-Lba"/>
+                                    <constraint firstItem="XZ0-5d-mom" firstAttribute="leading" secondItem="lsp-xY-AI0" secondAttribute="trailing" constant="10" id="d0d-Pj-jAr"/>
                                     <constraint firstItem="lG6-Fy-4V4" firstAttribute="top" secondItem="Avl-Hy-AUK" secondAttribute="top" id="dFH-xD-aIc"/>
+                                    <constraint firstItem="lsp-xY-AI0" firstAttribute="top" secondItem="Avl-Hy-AUK" secondAttribute="topMargin" constant="76" id="eht-Gv-aAo"/>
                                     <constraint firstItem="Fuc-C7-bUO" firstAttribute="leading" secondItem="Avl-Hy-AUK" secondAttribute="leading" id="jxu-5Y-xum"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="lsp-xY-AI0" secondAttribute="trailing" constant="79" id="mnz-h9-581"/>
+                                    <constraint firstItem="h4o-2b-tzH" firstAttribute="top" secondItem="01a-Z1-CMG" secondAttribute="bottom" constant="14.5" id="twh-jh-Wi4"/>
                                     <constraint firstItem="Fuc-C7-bUO" firstAttribute="top" secondItem="Avl-Hy-AUK" secondAttribute="top" id="vNS-mh-dux"/>
+                                    <constraint firstItem="01a-Z1-CMG" firstAttribute="leading" secondItem="Avl-Hy-AUK" secondAttribute="leadingMargin" constant="36" id="vpM-Bw-Etb"/>
                                     <constraint firstAttribute="trailing" secondItem="lG6-Fy-4V4" secondAttribute="trailing" id="y9J-2Z-k36"/>
                                     <constraint firstAttribute="trailing" secondItem="Fuc-C7-bUO" secondAttribute="trailing" id="zNO-c7-V59"/>
                                 </constraints>
@@ -79,6 +118,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="第一節" width="471" height="473"/>
+        <image name="課程pdf" width="512" height="512"/>
+        <image name="課程背景" width="1080" height="1080"/>
     </resources>
 </document>

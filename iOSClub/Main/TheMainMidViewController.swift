@@ -42,13 +42,11 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
                 self.MenuView.isHidden = false
                 self.MenuView.center.x -= self.MenuView.frame.width
                 self.MenuXpos -= Int(self.MenuView.frame.width)
-                
             }
             MenuChange = 1
         }else{
             UIView.animate(withDuration: 0.4){
                 self.containerView.center.x += self.MenuView.frame.width
-                
                 self.MenuView.center.x += self.MenuView.frame.width
                 self.MenuXpos += Int(self.MenuView.frame.width)
             }

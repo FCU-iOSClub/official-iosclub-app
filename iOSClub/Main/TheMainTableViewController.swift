@@ -8,8 +8,37 @@
 
 import UIKit
 
-class TheMainTableViewController: UITableViewController {
-
+class TheMainTableViewController: UITableViewController{
+    
+    let iOSMail = "iosclub@mail.fcu.edu.tw"
+    @IBAction func mailButton(_ sender: Any) {
+        guard let url = URL(string: "mailto:\(iOSMail)")else {
+            print("URLError")
+            return
+        }
+        UIApplication.shared.open(url)
+        //mailto:iosclub@mail.fcu.edu.tw
+    }
+    @IBAction func fbButton(_ sender: Any) {
+        guard let url = URL(string: "https://www.facebook.com/FCU.iOSClub") else {
+            print("URLError")
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+    @IBAction func igButton(_ sender: Any) {
+        guard let url = URL(string: "https://www.instagram.com/fcu.iosclub/") else {
+            print("URLError")
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+    
+    
+    
+    
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 

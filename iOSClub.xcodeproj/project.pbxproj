@@ -19,6 +19,7 @@
 		1FD625C222CDF7A400A04E92 /* NaviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C122CDF7A400A04E92 /* NaviViewController.swift */; };
 		1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD625C322CDFF7100A04E92 /* TheMainMidViewController.swift */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
+		24F174D122D05CF200C8181D /* GameFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174D022D05CF200C8181D /* GameFinishViewController.swift */; };
 		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
 		3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B019EFC22CF5F07009AD27B /* Quiz.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
@@ -60,6 +61,7 @@
 		24F174C122CEECFB00C8181D /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayingViewController.swift; sourceTree = "<group>"; };
 		24F174C922CF027F00C8181D /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		24F174D022D05CF200C8181D /* GameFinishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameFinishViewController.swift; sourceTree = "<group>"; };
 		3B019EFC22CF5F07009AD27B /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quiz.swift; path = iOSClub/Quiz.swift; sourceTree = SOURCE_ROOT; };
 		3B0A462C22CDB162008CCF1C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameStoryboard.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				1176271A22CE0E4500A99999 /* ActivityStoryboard.storyboard */,
 				1176271B22CE0E4500A99999 /* ActivityViewController.swift */,
 				24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */,
+				24F174D022D05CF200C8181D /* GameFinishViewController.swift */,
 			);
 			path = iOSClub;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
 				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
 				424F034C22CF51FF00B5F3DA /* AboutUsTableViewCell.swift in Sources */,
+				24F174D122D05CF200C8181D /* GameFinishViewController.swift in Sources */,
 				424F035122CF5AB500B5F3DA /* CollapsibleTableSectionViewController.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
 				427F9B4522CFDA4200C525C9 /* AboutUsViewController.swift in Sources */,

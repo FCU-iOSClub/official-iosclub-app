@@ -22,7 +22,7 @@
 		24A217CF22D44285008E366F /* XcodeSimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A217CE22D44285008E366F /* XcodeSimulatorViewController.swift */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
 		24F174D122D05CF200C8181D /* GameFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174D022D05CF200C8181D /* GameFinishViewController.swift */; };
-		3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
+		3B019EF622CF33E8009AD27B /* Cadre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* Cadre.swift */; };
 		3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B019EFC22CF5F07009AD27B /* Quiz.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
@@ -43,7 +43,7 @@
 		7698357722D1E3EB00979602 /* xcodeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7698357622D1E3EB00979602 /* xcodeStoryboard.storyboard */; };
 		76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */; };
 		76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */; };
-		B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */; };
+		B76239FC22CEF93E00D9A2DC /* Cadre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* Cadre.swift */; };
 		B785B54E22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -92,7 +92,7 @@
 		7698357622D1E3EB00979602 /* xcodeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = xcodeStoryboard.storyboard; sourceTree = "<group>"; };
 		76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumCollectionViewCell.swift; sourceTree = "<group>"; };
 		B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AboutUsStoryboard.storyboard; sourceTree = "<group>"; };
-		B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsData.swift; sourceTree = "<group>"; };
+		B785B55322CDD3AB00F6BAB0 /* Cadre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cadre.swift; sourceTree = "<group>"; };
 		E6F2A8EA00EB8AB23008B9D3 /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,7 +204,7 @@
 				424F034B22CF51FF00B5F3DA /* AboutUsTableViewCell.xib */,
 				B785B54D22CDB39700F6BAB0 /* AboutUsStoryboard.storyboard */,
 				427F9B4422CFDA4200C525C9 /* AboutUsViewController.swift */,
-				B785B55322CDD3AB00F6BAB0 /* AboutUsData.swift */,
+				B785B55322CDD3AB00F6BAB0 /* Cadre.swift */,
 			);
 			path = AboutUs;
 			sourceTree = "<group>";
@@ -371,14 +371,14 @@
 				1FFDDBE922D0A22F0029D317 /* TheMainTableViewController.swift in Sources */,
 				76AC4B3F22CEF90100D492EF /* curriculumStoryboardCollectionViewController.swift in Sources */,
 				157AAC2C22CC91B8001A8154 /* AppDelegate.swift in Sources */,
-				B76239FC22CEF93E00D9A2DC /* AboutUsData.swift in Sources */,
+				B76239FC22CEF93E00D9A2DC /* Cadre.swift in Sources */,
 				424F034C22CF51FF00B5F3DA /* AboutUsTableViewCell.swift in Sources */,
 				24F174D122D05CF200C8181D /* GameFinishViewController.swift in Sources */,
 				424F035122CF5AB500B5F3DA /* CollapsibleTableSectionViewController.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
 				24A217CF22D44285008E366F /* XcodeSimulatorViewController.swift in Sources */,
 				427F9B4522CFDA4200C525C9 /* AboutUsViewController.swift in Sources */,
-				3B019EF622CF33E8009AD27B /* AboutUsData.swift in Sources */,
+				3B019EF622CF33E8009AD27B /* Cadre.swift in Sources */,
 				7698357522D1DCFA00979602 /* xcodeTableViewController.swift in Sources */,
 				767AF5F422D3C42B0088CC7F /* xcodeLibTableViewCell.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,

@@ -8,66 +8,92 @@
 
 import UIKit
 import Alamofire
+
+
+extension UIImageView {
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    public func imageFromUrl(_ urlString: String,completion: @escaping () -> ()) {
+        
+        let url:URL! = URL(string: urlString)
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            let imageCache = delegate.imageCache
+            
+            if let imageFromCache = imageCache.object(forKey: urlString as AnyObject) as? UIImage {
+                self.image = imageFromCache
+                completion()
+                return
+            }
+            
+            getData(from: url) { data, response, error in
+                guard let data = data, error == nil else { return }
+                
+                DispatchQueue.main.async() {
+                    let imageToCache = UIImage(data: data)
+                    imageCache.setObject(imageToCache!, forKey: urlString as AnyObject)
+                    if self.image == nil {
+                        self.image = imageToCache
+                    }
+                    completion()
+                }
+            }
+        }
+    }
+}
+
 class AboutUsViewController: CollapsibleTableSectionViewController {
     
-    @IBOutlet weak var topView: UIView!
-    var cadres:[Cadres] = [
-        Cadres("現任幹部(第三屆)", [
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。")]
-        ),
-        Cadres("第二屆", [
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。")
-            ]),
-        Cadres("第ㄧ屆", [
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。")
-            ])]
+    var cadres :[Cadres] = []
+    private let refreshControl = UIRefreshControl()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-        self.delegate = self
-        self.tableView.register(UINib(nibName: "AboutUsTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutUsTableViewCell")
         
-        Alamofire.request("https://fcu-d0611134.jupyter.ahkui.com/api/v1/cadre").responseJSON{res in
-            if let result = res.result.value{
-                if let array = result as? [[String:AnyObject]]{
-                    self.cadres = []
-                    print("有幾屆\(array.count)")
-                    for generation in array {
-                        if let gen = generation["items"] as? [[String:String]] {
-                            
-                            var temp:[Cadre] = []
-                            
-                            for item in gen {
-                                temp.append(Cadre(
-                                    item["img"] ?? "default",
-                                    item["position"] ?? "職位",
-                                    item["name"] ?? "名字",
-                                    item["introduce"] ?? "介紹"
+        self.delegate = self
+        if #available(iOS 10.0, *) {
+            tableView.refreshControl = refreshControl
+        } else {
+            tableView.addSubview(refreshControl)
+        }
+        self.tableView.register(UINib(nibName: "AboutUsTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutUsTableViewCell")
+        refreshControl.addTarget(self, action: #selector(loadData), for: .valueChanged)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        loadData()
+    }
+    
+    @objc func loadData(){
+        Alamofire.request("https://fcuiosclub.jupyter.ahkui.com/api/v1/cadre")
+            .responseJSON{res in
+                if let result = res.result.value{
+                    if let array = result as? [[String:AnyObject]]{
+                        self.cadres = []
+                        for generation in array {
+                            if let gen = generation["items"] as? [[String:String]] {
+                                var temp:[Cadre] = []
+                                for item in gen {
+                                    temp.append(Cadre(
+                                        item["img"] ?? "default",
+                                        item["position"] ?? "職位",
+                                        item["name"] ?? "名字",
+                                        item["introduce"] ?? "介紹",
+                                        item["fbUrl"] ?? "https://www.facebook.com/FCU.iOSClub/"
+                                    ))
+                                }
+                                self.cadres.append(Cadres(
+                                    generation["num"] as? String ?? "屆數",
+                                    temp
                                 ))
                             }
-                            self.cadres.append(Cadres(
-                                generation["num"] as? String ?? "屆數",
-                                temp
-                            ))
                         }
+                        self.tableView.reloadData()
                     }
-                    self.tableView.reloadData()
-                    
                 }
-            }
+                self.refreshControl.endRefreshing()
         }
         
     }
@@ -93,19 +119,19 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
     func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AboutUsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AboutUsTableViewCell") as? AboutUsTableViewCell ?? AboutUsTableViewCell(style: .default, reuseIdentifier: "AboutUsTableViewCell")
         let index = indexPath.section
-        let img = cadres[index].items[indexPath.row].photo
-        if img!.count > 100{
-            let data = Data(base64Encoded: cadres[index].items[indexPath.row].photo, options: .ignoreUnknownCharacters)
-            cell.photo.image = UIImage(data: data!)
-        }else{
-            cell.photo.image = UIImage(named:cadres[index].items[indexPath.row].photo)
+        
+        if let img = cadres[index].items[indexPath.row].photo {
+            cell.photo.image = nil
+            cell.loading.startAnimating()
+            cell.photo.imageFromUrl("https://drive.google.com/uc?id=\(img)&export=download") {
+                cell.loading.stopAnimating()
+            }
+        } else {
+            cell.photo.image = UIImage(named: "default")
         }
-        
-        
         cell.position.text = cadres[index].items[indexPath.row].position
         cell.name.text = cadres[index].items[indexPath.row].name
         cell.introduce.text = cadres[index].items[indexPath.row].introduce
-        
         return cell
     }
     func collapsibleTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -120,7 +146,24 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
         return true
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let urlString = cadres[indexPath.section].items[indexPath.row].getFbUrl()
+        if  UIApplication.shared.canOpenURL(URL(string:"fb://profile/\(urlString)")!){
+            UIApplication.shared.open(URL(string: "fb://profile/\(urlString)")!)
+        }else{
+            UIApplication.shared.open(URL(string: "https://www.facebook.com/\(urlString)")!)
+        }
+    }
+    
 }
+
+
+
+
+
+
+
 
 
 

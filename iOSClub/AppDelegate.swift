@@ -12,7 +12,9 @@ import CoreData
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    let imageCache = NSCache<AnyObject, AnyObject>()
+    
     var window: UIWindow?
     var restrictRotation:UIInterfaceOrientationMask = .portrait
 
@@ -36,9 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Thread.sleep(forTimeInterval: 10.0)
         
         return true
-        
-        
-        
         
         // Override point for customization after application launch.
     }

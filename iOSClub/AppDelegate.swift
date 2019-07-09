@@ -12,7 +12,9 @@ import CoreData
 @UIApplicationMain
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
+    let imageCache = NSCache<AnyObject, AnyObject>()
+    
     var window: UIWindow?
     var restrictRotation:UIInterfaceOrientationMask = .portrait
 

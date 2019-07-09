@@ -11,7 +11,7 @@ import UIKit
 class GamePlayingViewController: UIViewController {
     @IBOutlet weak var StackOutlet: UIStackView!
     
-    var Questions:[Quiz] = [Quiz(name:"Google",description: "字母的顏色錯了"),Quiz(name:"百事",description: "紅藍傻傻分不清"),Quiz(name: "Windows",description: "想不到吧～顏色對調啦！"),Quiz(name:"Nestle",description: "鳥只有兩隻啦"),Quiz(name:"BMW",description: "藍白顏色對調了"),Quiz(name:"mutella",description: "雀巢飲料真好喝")]
+    var Questions:[Quiz] = [Quiz(name:"Google",description: "字母的顏色錯了"),Quiz(name:"百事",description: "紅藍傻傻分不清"),Quiz(name: "Windows",description: "想不到吧～顏色對調啦！"),Quiz(name:"Nestle",description: "鳥只有兩隻啦"),Quiz(name:"BMW",description: "藍白顏色對調了"),Quiz(name:"mutella",description: "雀巢飲料真好喝"),Quiz(name: "TESLA", description: "Ｓ上半部沒有缺口喔！")]
     var index = 0
     var backgroundWrong = UIColor(displayP3Red: 255, green: 0, blue: 0, alpha: 1.0)
     var backgroundRight = UIColor(displayP3Red: 0, green: 255, blue: 0, alpha: 1.0)

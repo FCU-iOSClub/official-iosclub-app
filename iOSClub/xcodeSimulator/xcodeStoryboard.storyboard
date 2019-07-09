@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Xcode Lib Table View Controller-->
+        <!--Xcode Table View Controller-->
         <scene sceneID="UuF-LI-ch1">
             <objects>
-                <tableViewController storyboardIdentifier="xcodeVC" id="XcM-ox-9eI" customClass="xcodeLibTableViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="xcodeVC" id="XcM-ox-9eI" customClass="xcodeTableViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zHF-XA-Sfl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
                                 <connections>
                                     <outlet property="labtext" destination="KEY-sO-kPM" id="ptW-qd-ZCl"/>
                                     <outlet property="mage" destination="0Vx-u9-GCZ" id="HYU-dl-8kN"/>
-                                    <segue destination="BSR-iK-i95" kind="show" id="eFH-qJ-7Cg"/>
+                                    <segue destination="BSR-iK-i95" kind="showDetail" id="ga5-hh-nE8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -68,16 +68,25 @@
             </objects>
             <point key="canvasLocation" x="-636.23188405797111" y="54.910714285714285"/>
         </scene>
-        <!--View Controller-->
+        <!--Xcode Simulator View Controller-->
         <scene sceneID="Zme-hj-nvB">
             <objects>
-                <viewController id="BSR-iK-i95" sceneMemberID="viewController">
+                <viewController id="BSR-iK-i95" customClass="XcodeSimulatorViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOl-iQ-FYg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Co-yIh">
                                 <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAX-zg-eDh">
+                                        <rect key="frame" x="186" y="90" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="M2q-hT-TzI"/>
@@ -86,6 +95,25 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bSQ-PE-PZ9">
                                 <rect key="frame" x="0.0" y="241" width="414" height="621"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Description" textLabel="wyn-Ur-dbV" style="IBUITableViewCellStyleDefault" id="n18-pV-jvu">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n18-pV-jvu" id="tOs-A4-z0g">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wyn-Ur-dbV">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BSR-iK-i95" id="D3k-WR-ig0"/>
                                     <outlet property="delegate" destination="BSR-iK-i95" id="aGL-yA-vrs"/>
@@ -118,6 +146,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ioq-Jb-lMT"/>
                     </view>
+                    <connections>
+                        <outlet property="ChangeLabel" destination="oAX-zg-eDh" id="Jih-ft-nxS"/>
+                        <outlet property="ListTable" destination="bSQ-PE-PZ9" id="RN7-s3-P79"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u17-Xg-omW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

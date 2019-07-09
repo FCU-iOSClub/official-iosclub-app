@@ -38,8 +38,8 @@
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="2Rz-dN-Xtc">
-                        <rect key="frame" x="319" y="11" width="40" height="40"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Apple" translatesAutoresizingMaskIntoConstraints="NO" id="2Rz-dN-Xtc">
+                        <rect key="frame" x="88" y="11" width="271" height="91"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="KXK-HQ-Kqp"/>
                             <constraint firstAttribute="width" secondItem="2Rz-dN-Xtc" secondAttribute="height" multiplier="1:1" id="YyW-BV-Uvn"/>
@@ -87,7 +87,7 @@
                 <outlet property="titleLabel" destination="4Od-hl-ENS" id="Zc2-fd-i6t"/>
                 <outlet property="titleLabelLeftMargin" destination="W5Z-YV-Yjl" id="xUn-7D-bME"/>
             </connections>
-            <point key="canvasLocation" x="29.5" y="111.5"/>
+            <point key="canvasLocation" x="28" y="111.0944527736132"/>
         </tableViewCell>
     </objects>
     <resources>

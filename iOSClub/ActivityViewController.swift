@@ -7,12 +7,11 @@
 //
 
 import UIKit
-
-
+import Alamofire
 class ActivityViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
     
-    let data:[ Int: [(TimelinePoint, UIColor, String, String, String, String?, String?, String?)]] = [0:[
+    var data:[ Int: [(TimelinePoint, UIColor, String, String, String, String?, String?, String?)]] = [0:[
         (TimelinePoint(), UIColor.black, "2019/09/15","社團博覽會", "歡迎新生來社團攤位", nil, nil, "maple"),
         (TimelinePoint(), UIColor.black, "2019/10/15","新生茶會", "歡迎新生來社團攤", nil, nil, nil),
         (TimelinePoint(color: UIColor.black, filled: true), UIColor.black, "2019/11/15","雙十烤肉", "歡迎新生來社團", "參考用", "Apple", nil),
@@ -101,7 +100,27 @@ class ActivityViewController: UIViewController,UITableViewDelegate,UITableViewDa
         tableview.dataSource = self
         let timelineTableViewCellNib=UINib(nibName: "TimelineTableViewCell", bundle: Bundle(for:TimelineTableViewCell.self))
         tableview.register(timelineTableViewCellNib, forCellReuseIdentifier: "TimelineTableViewCell")
-        
+        Alamofire.request("http://127.0.0.1:2914/api/v1/activities").responseJSON(completionHandler: {(res) in
+            if let result = res.result.value{
+                if let activities = result as? [[String:AnyObject]]{
+                    for i in activities{
+                        let dateStr = i["date"] as! String
+                        let dateFormatter = DateFormatter.init()
+                        dateFormatter.dateFormat = "yyyy-MM-dd"
+                        let date = dateFormatter.date(from: dateStr)
+                        self.data[0] = []
+                        if date!.timeIntervalSinceReferenceDate - Date().timeIntervalSinceReferenceDate > 0 {
+                            
+                        }else{
+                            
+                        }
+                        
+                        
+                        
+                    }
+                }
+            }
+        })
         
         
         
@@ -110,7 +129,9 @@ class ActivityViewController: UIViewController,UITableViewDelegate,UITableViewDa
         
         // Do any additional setup after loading the view.
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

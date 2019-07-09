@@ -9,27 +9,34 @@
 import UIKit
 import Alamofire
 
+let imageCache = NSCache<AnyObject, AnyObject>()
 extension UIImageView {
     func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
         URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
     }
-    public func imageFromUrl(from url: URL) {
-//        print("Download Started")
+    public func imageFromUrl(from url: URL,completion: @escaping () -> ()) {
+        
+        if let imageFromCache = imageCache.object(forKey: url as AnyObject) as? UIImage {
+            self.image = imageFromCache
+            completion()
+            return
+        }
+        
         getData(from: url) { data, response, error in
             guard let data = data, error == nil else { return }
-//            print(response?.suggestedFilename ?? url.lastPathComponent)
-//            print("Download Finished")
+            
             DispatchQueue.main.async() {
-                self.image = UIImage(data: data)
+                let imageToCache = UIImage(data: data)
+                imageCache.setObject(imageToCache!, forKey: url as AnyObject)
+                self.image = imageToCache
+                completion()
             }
         }
     }
 }
 
-
 class AboutUsViewController: CollapsibleTableSectionViewController {
     
-    @IBOutlet weak var topView: UIView!
     var cadres :[Cadres] = []
 //    var cadres:[Cadres] = [
 //        Cadres("現任幹部(第三屆)", [
@@ -118,7 +125,11 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
         let cell: AboutUsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AboutUsTableViewCell") as? AboutUsTableViewCell ?? AboutUsTableViewCell(style: .default, reuseIdentifier: "AboutUsTableViewCell")
         let index = indexPath.section
         if let img = cadres[index].items[indexPath.row].photo {
-            cell.photo.imageFromUrl(from: URL(string: "https://drive.google.com/uc?id=\(img)&export=download")!)
+            cell.photo.image = nil
+            cell.loading.startAnimating()
+            cell.photo.imageFromUrl(from: URL(string: "https://drive.google.com/uc?id=\(img)&export=download")!) {
+                cell.loading.stopAnimating()
+            }
         } else {
             cell.photo.image = UIImage(named: "default")
         }

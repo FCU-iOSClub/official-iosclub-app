@@ -43,7 +43,7 @@ open class TimelineTableViewCell: UITableViewCell {
             self.setNeedsDisplay()
         }
     }
-    
+
     open var bubbleColor = UIColor(red: 0.75, green: 0.75, blue: 0.75, alpha: 1.0)
     
     override open func awakeFromNib() {

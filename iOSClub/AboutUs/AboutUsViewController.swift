@@ -67,7 +67,7 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
     }
     
     @objc func loadData(){
-        Alamofire.request("https://fcu-d0611134.jupyter.ahkui.com/api/v1/cadre")
+        Alamofire.request("https://fcuiosclub.jupyter.ahkui.com/api/v1/cadre")
             .responseJSON{res in
                 if let result = res.result.value{
                     if let array = result as? [[String:AnyObject]]{
@@ -119,6 +119,7 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
     func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AboutUsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AboutUsTableViewCell") as? AboutUsTableViewCell ?? AboutUsTableViewCell(style: .default, reuseIdentifier: "AboutUsTableViewCell")
         let index = indexPath.section
+        
         if let img = cadres[index].items[indexPath.row].photo {
             cell.photo.image = nil
             cell.loading.startAnimating()

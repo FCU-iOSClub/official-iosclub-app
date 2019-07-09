@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,7 +17,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="tSe-Hi-jV7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.18823529411764706" green="0.27058823529411763" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1450980392" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>
                             <tableViewSection id="ZOm-2m-q3u">
                                 <cells>
@@ -127,7 +127,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="賈伯斯" translatesAutoresizingMaskIntoConstraints="NO" id="Y1C-vM-oVD">
-                                                    <rect key="frame" x="0.0" y="89" width="817" height="980"/>
+                                                    <rect key="frame" x="0.0" y="89" width="16" height="19"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Y1C-vM-oVD" secondAttribute="height" multiplier="5:6" id="hCV-v2-1li"/>
                                                     </constraints>
@@ -155,7 +155,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEN-qa-aNt">
-                                                    <rect key="frame" x="188" y="14" width="38.5" height="38.5"/>
+                                                    <rect key="frame" x="188" y="14.5" width="38.5" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="38.5" id="Oe2-PJ-0kz"/>
                                                         <constraint firstAttribute="height" constant="38.5" id="afP-b1-9jc"/>
@@ -166,7 +166,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-ei-k7m">
-                                                    <rect key="frame" x="286.5" y="14" width="38.5" height="38.5"/>
+                                                    <rect key="frame" x="286.5" y="14.5" width="38.5" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="38.5" id="43U-GC-P98"/>
                                                         <constraint firstAttribute="height" constant="38.5" id="QyS-on-ZZ4"/>
@@ -177,7 +177,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-AS-Q2e">
-                                                    <rect key="frame" x="89.5" y="14" width="38.5" height="38.5"/>
+                                                    <rect key="frame" x="89.5" y="14.5" width="38.5" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="38.5" id="88F-hv-9t8"/>
                                                         <constraint firstAttribute="width" constant="38.5" id="j1a-lQ-Bxv"/>
@@ -197,7 +197,7 @@
                                                 <constraint firstItem="zIy-ei-k7m" firstAttribute="centerY" secondItem="Cmb-6s-Fei" secondAttribute="centerY" id="qMo-Wr-5cS"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.18823529411764706" green="0.27058823529411763" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.14509803921568626" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -488,7 +488,7 @@
                     <navigationBar key="navigationBar" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" translucent="NO" id="aX2-rf-SZa">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.090196078431372548" green="0.10980392156862745" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.18593928217887878" green="0.27271455526351929" blue="0.27418160438537598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.18823529411764706" green="0.27058823529411763" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="24"/>

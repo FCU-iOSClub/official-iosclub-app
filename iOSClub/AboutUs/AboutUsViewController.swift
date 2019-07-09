@@ -69,7 +69,7 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
         self.delegate = self
         self.tableView.register(UINib(nibName: "AboutUsTableViewCell", bundle: nil), forCellReuseIdentifier: "AboutUsTableViewCell")
         
-        Alamofire.request("https://fcu-d0611134.jupyter.ahkui.com/api/v1/cadre").responseJSON{res in
+        Alamofire.request("https://fcuiosclub.jupyter.ahkui.com/api/v1/cadre").responseJSON{res in
             if let result = res.result.value{
                 if let array = result as? [[String:AnyObject]]{
                     self.cadres = []

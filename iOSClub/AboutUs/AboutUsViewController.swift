@@ -8,31 +8,58 @@
 
 import UIKit
 import Alamofire
+
+let imageCache = NSCache<AnyObject, AnyObject>()
+extension UIImageView {
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    public func imageFromUrl(from url: URL,completion: @escaping () -> ()) {
+        
+        if let imageFromCache = imageCache.object(forKey: url as AnyObject) as? UIImage {
+            self.image = imageFromCache
+            completion()
+            return
+        }
+        
+        getData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            
+            DispatchQueue.main.async() {
+                let imageToCache = UIImage(data: data)
+                imageCache.setObject(imageToCache!, forKey: url as AnyObject)
+                self.image = imageToCache
+                completion()
+            }
+        }
+    }
+}
+
 class AboutUsViewController: CollapsibleTableSectionViewController {
     
-    @IBOutlet weak var topView: UIView!
-    var cadres:[Cadres] = [
-        Cadres("現任幹部(第三屆)", [
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329")]
-        ),
-        Cadres("第二屆", [
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997")
-            ]),
-        Cadres("第ㄧ屆", [
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329")
-            ])]
-    
+    var cadres :[Cadres] = []
+//    var cadres:[Cadres] = [
+//        Cadres("現任幹部(第三屆)", [
+//            Cadre("1fU9aviGSp58WWVttbZOZAbHEBlVLVzRE", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329")]
+//        ),
+//        Cadres("第二屆", [
+//            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
+//            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
+//            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
+//            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997")
+//            ]),
+//        Cadres("第ㄧ屆", [
+//            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+//            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329")
+//            ])]
+//
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -97,14 +124,15 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
     func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AboutUsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AboutUsTableViewCell") as? AboutUsTableViewCell ?? AboutUsTableViewCell(style: .default, reuseIdentifier: "AboutUsTableViewCell")
         let index = indexPath.section
-        let img = cadres[index].items[indexPath.row].photo
-        if img!.count > 100{
-            let data = Data(base64Encoded: cadres[index].items[indexPath.row].photo, options: .ignoreUnknownCharacters)
-            cell.photo.image = UIImage(data: data!)
-        }else{
-            cell.photo.image = UIImage(named:cadres[index].items[indexPath.row].photo)
+        if let img = cadres[index].items[indexPath.row].photo {
+            cell.photo.image = nil
+            cell.loading.startAnimating()
+            cell.photo.imageFromUrl(from: URL(string: "https://drive.google.com/uc?id=\(img)&export=download")!) {
+                cell.loading.stopAnimating()
+            }
+        } else {
+            cell.photo.image = UIImage(named: "default")
         }
-        
         cell.position.text = cadres[index].items[indexPath.row].position
         cell.name.text = cadres[index].items[indexPath.row].name
         cell.introduce.text = cadres[index].items[indexPath.row].introduce

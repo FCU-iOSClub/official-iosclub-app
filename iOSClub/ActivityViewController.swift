@@ -13,19 +13,19 @@ class ActivityViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     
     let data:[ Int: [(TimelinePoint, UIColor, String, String, String, String?, String?, String?)]] = [0:[
-        (TimelinePoint(), UIColor.black, "2019/09/15","社團博覽會", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, "maple"),
-        (TimelinePoint(), UIColor.black, "2019/10/15","新生茶會", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, nil),
-        (TimelinePoint(color: UIColor.black, filled: true), UIColor.black, "2019/11/15","雙十烤肉", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "參考用", "Apple", nil),
-        (TimelinePoint(), UIColor.clear, "2019/12/15","聖誕節交換禮物及期末聚", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", nil, nil, nil)
+        (TimelinePoint(), UIColor.black, "2019/09/15","社團博覽會", "歡迎新生來社團攤位", nil, nil, "maple"),
+        (TimelinePoint(), UIColor.black, "2019/10/15","新生茶會", "歡迎新生來社團攤", nil, nil, nil),
+        (TimelinePoint(color: UIColor.black, filled: true), UIColor.black, "2019/11/15","雙十烤肉", "歡迎新生來社團", "參考用", "Apple", nil),
+        (TimelinePoint(), UIColor.clear, "2019/12/15","聖誕節交換禮物及期末聚", "歡迎新生來社團", nil, nil, nil)
         ], 1:[
-            (TimelinePoint(), UIColor.lightGray, "2019/08/15","期末聚", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "60 mins", nil, nil),
-            (TimelinePoint(), UIColor.lightGray, "2019/07/15","workshop", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "30 mins", nil, nil),
-            (TimelinePoint(), UIColor.lightGray, "2019/06/15","社員大會", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "90 mins", nil, "Sun"),
-            (TimelinePoint(), UIColor.lightGray, "2019/05/15","幹部宣布", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "60 mins", nil, "Sun"),
-            (TimelinePoint(), UIColor.lightGray, "2019/04/15","期末聚", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "30 mins", "Apple", "Sun"),
-            (TimelinePoint(), UIColor.lightGray, "2019/03/15","期中聚", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "120 mins", "Apple", "spring flower"),
-            (TimelinePoint(), UIColor.lightGray, "2019/02/15","workshop", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "150 mins", "Apple", "Sun"),
-            (TimelinePoint(), UIColor.lightGray, "2019/01/15","烤肉", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "60 mins", nil, "Sun"),
+            (TimelinePoint(), UIColor.lightGray, "2019/08/15","期末聚", "歡迎新生來社團", "60 mins", nil, nil),
+            (TimelinePoint(), UIColor.lightGray, "2019/07/15","歡迎新生來社團", "30 mins",nil, nil, nil),
+            (TimelinePoint(), UIColor.lightGray, "2019/06/15","社員大會", "歡迎新生來社團",nil, nil, "Sun"),
+            (TimelinePoint(), UIColor.lightGray, "2019/05/15","幹部宣布", "歡迎新生來社團", "60 mins", nil, "Sun"),
+            (TimelinePoint(), UIColor.lightGray, "2019/04/15","期末聚", "歡迎新生來社團", "30 mins", "Apple", "Sun"),
+            (TimelinePoint(), UIColor.lightGray, "2019/03/15","期中聚", "歡迎新生來社團", "120 mins", "Apple", "spring flower"),
+            (TimelinePoint(), UIColor.lightGray, "2019/02/15","workshop", "歡迎新生來社團", "150 mins", "Apple", "Sun"),
+            (TimelinePoint(), UIColor.lightGray, "2019/01/15","烤肉", "歡迎新生來社團", "60 mins", nil, "Sun"),
             (TimelinePoint(), UIColor.lightGray, "2018/12/15","聖誕交換禮物", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", nil, nil, "Moon"),
             (TimelinePoint(), UIColor.lightGray, "2018/11/15","烤肉", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "30 mins", nil, "Moon"),
             (TimelinePoint(), backColor: UIColor.clear, "2018/10/15","萬聖節", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", nil, nil, "Moon")

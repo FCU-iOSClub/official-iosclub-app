@@ -13,24 +13,24 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
     @IBOutlet weak var topView: UIView!
     var cadres:[Cadres] = [
         Cadres("現任幹部(第三屆)", [
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329")]
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329")]
         ),
         Cadres("第二屆", [
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997")
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997"),
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "100002795974997")
             ]),
         Cadres("第ㄧ屆", [
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329")
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "100001324861329")
             ])]
     
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
                                     item["position"] ?? "職位",
                                     item["name"] ?? "名字",
                                     item["introduce"] ?? "介紹",
-                                    item["fbUrl"] ?? "fb://page/?id=414453055238471"
+                                    item["fbUrl"] ?? "https://www.facebook.com/FCU.iOSClub/"
                                 ))
                             }
                                 
@@ -125,7 +125,11 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let urlString = cadres[indexPath.section].items[indexPath.row].getFbUrl()
-        UIApplication.shared.open(URL(string: urlString)!)
+        if  UIApplication.shared.canOpenURL(URL(string:"fb://profile/\(urlString)")!){
+            UIApplication.shared.open(URL(string: "fb://profile/\(urlString)")!)
+        }else{
+            UIApplication.shared.open(URL(string: "https://www.facebook.com/\(urlString)")!)
+        }
     }
     
 }

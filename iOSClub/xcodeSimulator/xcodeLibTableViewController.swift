@@ -1,53 +1,15 @@
 //
-//  TheMainTableViewController.swift
+//  xcodeLibTableViewController.swift
 //  iOSClub
 //
-//  Created by iMac01 on 2019/7/6.
-//  Copyright © 2019年 FCUiosclub. All rights reserved.
+//  Created by 阿騰 on 2019/7/9.
+//  Copyright © 2019 FCUiosclub. All rights reserved.
 //
 
 import UIKit
 
-class TheMainTableViewController: UITableViewController{
-    
-    let iOSMail = "iosclub@mail.fcu.edu.tw"
-    @IBAction func mailButton(_ sender: Any) {
-        guard let url = URL(string: "mailto:\(iOSMail)")else {
-            print("URLError")
-            return
-        }
-        
-        print(UIApplication.shared.canOpenURL(url))
-        UIApplication.shared.open(url)
-        //mailto:iosclub@mail.fcu.edu.tw
-    }
-    @IBAction func fbButton(_ sender: Any) {
-        guard let url = URL(string: "fb://page/?id=298555283953840") else {
-            print("URLError")
-            return
-        }
-        if UIApplication.shared.canOpenURL(url){
-            print("here")
-            UIApplication.shared.open(url)
-        }else{
-            print("failed")
-            UIApplication.shared.open(URL(string: "https://www.facebook.com/FCU.iOSClub/")!)
-        }
-        
-    }
-    @IBAction func igButton(_ sender: Any) {
-        guard let url = URL(string: "https://www.instagram.com/fcu.iosclub/") else {
-            print("URLError")
-            return
-        }
-        UIApplication.shared.open(url)
-    }
-    
-    
-    
-    
-    
-   
+class xcodeLibTableViewController: UITableViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -67,18 +29,18 @@ class TheMainTableViewController: UITableViewController{
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return 1
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "xcodeLibcell", for: indexPath) as! xcodeLibTableViewCell
+        cell.labtext.text = "aaaa"
         // Configure the cell...
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -90,7 +52,7 @@ class TheMainTableViewController: UITableViewController{
 
     /*
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)

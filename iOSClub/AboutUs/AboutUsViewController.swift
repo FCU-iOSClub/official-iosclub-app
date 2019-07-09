@@ -68,6 +68,8 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
                             self.tableView.reloadData()
                         }
                     }
+                    self.tableView.reloadData()
+                    
                 }
             }
         }

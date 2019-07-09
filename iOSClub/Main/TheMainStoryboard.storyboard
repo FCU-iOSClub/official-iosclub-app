@@ -139,42 +139,54 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="809-d1-zND">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="809-d1-zND">
                                         <rect key="frame" x="0.0" y="1277" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="809-d1-zND" id="Cmb-6s-Fei">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="劉祐炘" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-OV-C7C" userLabel="Mail">
-                                                    <rect key="frame" x="67.666666666666671" y="3.6666666666666679" width="40" height="40"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEN-qa-aNt">
+                                                    <rect key="frame" x="167.66666666666666" y="2" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="YrA-kg-3Nl"/>
-                                                        <constraint firstAttribute="width" constant="40" id="qdU-AT-mF6"/>
+                                                        <constraint firstAttribute="width" constant="40" id="Oe2-PJ-0kz"/>
+                                                        <constraint firstAttribute="height" constant="40" id="afP-b1-9jc"/>
                                                     </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="劉祐炘" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-ze-GNO" userLabel="FB">
-                                                    <rect key="frame" x="167.66666666666666" y="3.6666666666666679" width="40" height="40"/>
+                                                    <state key="normal" title="Button" image="facebook"/>
+                                                    <connections>
+                                                        <action selector="fbButton:" destination="CRb-sv-ZFZ" eventType="touchUpInside" id="GSb-g3-Zkh"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-ei-k7m">
+                                                    <rect key="frame" x="267.66666666666669" y="2" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="rZF-F0-1dT"/>
-                                                        <constraint firstAttribute="width" constant="40" id="wif-Hy-MuC"/>
+                                                        <constraint firstAttribute="width" constant="40" id="43U-GC-P98"/>
+                                                        <constraint firstAttribute="height" constant="40" id="QyS-on-ZZ4"/>
                                                     </constraints>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="劉祐炘" translatesAutoresizingMaskIntoConstraints="NO" id="6ra-qK-GbL" userLabel="IG">
-                                                    <rect key="frame" x="267.66666666666669" y="3.6666666666666679" width="40" height="40"/>
+                                                    <state key="normal" title="Button" image="instagram"/>
+                                                    <connections>
+                                                        <action selector="igButton:" destination="CRb-sv-ZFZ" eventType="touchUpInside" id="vSI-bK-bqw"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-AS-Q2e">
+                                                    <rect key="frame" x="67.666666666666671" y="2" width="40" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="JCF-HX-q3B"/>
-                                                        <constraint firstAttribute="width" constant="40" id="nXK-lL-xI1"/>
+                                                        <constraint firstAttribute="height" constant="40" id="88F-hv-9t8"/>
+                                                        <constraint firstAttribute="width" constant="40" id="j1a-lQ-Bxv"/>
                                                     </constraints>
-                                                </imageView>
+                                                    <state key="normal" title="Button" image="mail"/>
+                                                    <connections>
+                                                        <action selector="mailButton:" destination="CRb-sv-ZFZ" eventType="touchUpInside" id="aUf-rF-ffc"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="rnp-ze-GNO" firstAttribute="centerX" secondItem="Cmb-6s-Fei" secondAttribute="centerX" id="S8C-PV-uEM"/>
-                                                <constraint firstItem="6ra-qK-GbL" firstAttribute="centerY" secondItem="rnp-ze-GNO" secondAttribute="centerY" id="ZaV-oY-J4O"/>
-                                                <constraint firstItem="6ra-qK-GbL" firstAttribute="leading" secondItem="rnp-ze-GNO" secondAttribute="trailing" constant="60" id="aJf-Zj-eWv"/>
-                                                <constraint firstAttribute="bottom" secondItem="rnp-ze-GNO" secondAttribute="bottom" id="d4E-Gh-AJf"/>
-                                                <constraint firstItem="rnp-ze-GNO" firstAttribute="leading" secondItem="1wV-OV-C7C" secondAttribute="trailing" constant="60" id="q6l-P2-lyi"/>
-                                                <constraint firstItem="1wV-OV-C7C" firstAttribute="centerY" secondItem="rnp-ze-GNO" secondAttribute="centerY" id="xdI-4Z-AqA"/>
+                                                <constraint firstItem="zIy-ei-k7m" firstAttribute="leading" secondItem="dEN-qa-aNt" secondAttribute="trailing" constant="60" id="7ck-S4-KOQ"/>
+                                                <constraint firstItem="dEN-qa-aNt" firstAttribute="centerX" secondItem="Cmb-6s-Fei" secondAttribute="centerX" id="9SG-4W-JGn"/>
+                                                <constraint firstItem="dEN-qa-aNt" firstAttribute="centerY" secondItem="Cmb-6s-Fei" secondAttribute="centerY" id="9vI-1m-yVM"/>
+                                                <constraint firstItem="dEN-qa-aNt" firstAttribute="leading" secondItem="dK3-AS-Q2e" secondAttribute="trailing" constant="60" id="Ofk-Nk-Y8J"/>
+                                                <constraint firstItem="dK3-AS-Q2e" firstAttribute="centerY" secondItem="Cmb-6s-Fei" secondAttribute="centerY" id="hjV-J3-xnl"/>
+                                                <constraint firstItem="zIy-ei-k7m" firstAttribute="centerY" secondItem="Cmb-6s-Fei" secondAttribute="centerY" id="qMo-Wr-5cS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.090196078431372548" green="0.10980392156862745" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
@@ -195,7 +207,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43f-6r-R4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095" y="92"/>
+            <point key="canvasLocation" x="2093.5999999999999" y="91.625615763546804"/>
         </scene>
         <!--iOS Club-->
         <scene sceneID="ZGW-W8-erK">
@@ -509,7 +521,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="171" height="171"/>
+        <image name="instagram" width="171" height="171"/>
         <image name="list" width="24" height="24"/>
+        <image name="mail" width="171" height="171"/>
         <image name="劉祐炘" width="720" height="720"/>
         <image name="架構" width="12702" height="8380"/>
         <image name="賈伯斯" width="817" height="930"/>

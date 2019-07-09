@@ -36,8 +36,9 @@
 		424F035122CF5AB500B5F3DA /* CollapsibleTableSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F034F22CF5AB500B5F3DA /* CollapsibleTableSectionViewController.swift */; };
 		424F035322CF5BF200B5F3DA /* Pods_iOSClub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424F035222CF5BF200B5F3DA /* Pods_iOSClub.framework */; };
 		427F9B4522CFDA4200C525C9 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427F9B4422CFDA4200C525C9 /* AboutUsViewController.swift */; };
-		760AB00922D07F9900DF0FC2 /* xcordSimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760AB00822D07F9900DF0FC2 /* xcordSimulatorViewController.swift */; };
 		7638E40922CDD83D00951660 /* curriculumStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */; };
+		767AF5F422D3C42B0088CC7F /* xcodeLibTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AF5F322D3C42B0088CC7F /* xcodeLibTableViewCell.swift */; };
+		767AF5F822D3C66A0088CC7F /* xcodeLibTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767AF5F722D3C66A0088CC7F /* xcodeLibTableViewController.swift */; };
 		7698357522D1DCFA00979602 /* xcodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7698357422D1DCFA00979602 /* xcodeTableViewController.swift */; };
 		7698357722D1E3EB00979602 /* xcodeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7698357622D1E3EB00979602 /* xcodeStoryboard.storyboard */; };
 		76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */; };
@@ -83,9 +84,10 @@
 		424F035222CF5BF200B5F3DA /* Pods_iOSClub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_iOSClub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		427F9B4422CFDA4200C525C9 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		6CB93BD89AA300D0A4B5CDFA /* Pods-iOSClub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSClub.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSClub/Pods-iOSClub.debug.xcconfig"; sourceTree = "<group>"; };
-		760AB00822D07F9900DF0FC2 /* xcordSimulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcordSimulatorViewController.swift; sourceTree = "<group>"; };
 		7638E40822CDD83D00951660 /* curriculumStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = curriculumStoryboard.storyboard; sourceTree = "<group>"; };
 		7638E40C22CDE3AA00951660 /* curriculumStoryboardCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = curriculumStoryboardCollectionViewController.swift; sourceTree = "<group>"; };
+		767AF5F322D3C42B0088CC7F /* xcodeLibTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcodeLibTableViewCell.swift; sourceTree = "<group>"; };
+		767AF5F722D3C66A0088CC7F /* xcodeLibTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcodeLibTableViewController.swift; sourceTree = "<group>"; };
 		7698357422D1DCFA00979602 /* xcodeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcodeTableViewController.swift; sourceTree = "<group>"; };
 		7698357622D1E3EB00979602 /* xcodeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = xcodeStoryboard.storyboard; sourceTree = "<group>"; };
 		76AC4B3D22CEF5D300D492EF /* CurriculumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurriculumCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -211,8 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				7698357422D1DCFA00979602 /* xcodeTableViewController.swift */,
-				760AB00822D07F9900DF0FC2 /* xcordSimulatorViewController.swift */,
 				7698357622D1E3EB00979602 /* xcodeStoryboard.storyboard */,
+				767AF5F322D3C42B0088CC7F /* xcodeLibTableViewCell.swift */,
+				767AF5F722D3C66A0088CC7F /* xcodeLibTableViewController.swift */,
 			);
 			path = xcodeSimulator;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				1FD625C422CDFF7100A04E92 /* TheMainMidViewController.swift in Sources */,
 				24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */,
 				3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */,
+				767AF5F822D3C66A0088CC7F /* xcodeLibTableViewController.swift in Sources */,
 				1FFDDBE722D07F300029D317 /* ImageSlideshowViewController.swift in Sources */,
 				424F035022CF5AB500B5F3DA /* CollapsibleTableViewHeader.swift in Sources */,
 				4225045822CF229700063948 /* TimelineTableViewCell.swift in Sources */,
@@ -372,11 +376,11 @@
 				424F034C22CF51FF00B5F3DA /* AboutUsTableViewCell.swift in Sources */,
 				24F174D122D05CF200C8181D /* GameFinishViewController.swift in Sources */,
 				424F035122CF5AB500B5F3DA /* CollapsibleTableSectionViewController.swift in Sources */,
-				760AB00922D07F9900DF0FC2 /* xcordSimulatorViewController.swift in Sources */,
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
 				427F9B4522CFDA4200C525C9 /* AboutUsViewController.swift in Sources */,
 				3B019EF622CF33E8009AD27B /* Cadre.swift in Sources */,
 				7698357522D1DCFA00979602 /* xcodeTableViewController.swift in Sources */,
+				767AF5F422D3C42B0088CC7F /* xcodeLibTableViewCell.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
 				76AC4B3E22CEF5D300D492EF /* CurriculumCollectionViewCell.swift in Sources */,
 				157AAC3422CC91B8001A8154 /* iOSClub.xcdatamodeld in Sources */,

@@ -10,12 +10,10 @@ import UIKit
 
 class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     
-    var selectedViewController:UIViewController = UIViewController()
-    var HomeViewController:TheMainTableViewController = TheMainTableViewController()
     lazy var AboutUsViewController:AboutUsViewController = {
         return UIStoryboard(name: "AboutUsStoryboard", bundle: nil).instantiateViewController(withIdentifier: "AboutUsStoryboardID") as! AboutUsViewController
     }()
-    lazy var CurriculumViewController:curriculumStoryboardCollectionViewController = {
+     var CurriculumViewController:curriculumStoryboardCollectionViewController = {
         return UIStoryboard(name: "curriculumStoryboard", bundle: nil).instantiateViewController(withIdentifier: "curriculumStoryboard") as! curriculumStoryboardCollectionViewController
     }()
     lazy var ActivityViewController:ActivityViewController = {
@@ -27,53 +25,56 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     lazy var XcodeViewController:UITableViewController = {
         return UIStoryboard(name: "xcodeStoryboard", bundle: nil).instantiateViewController(withIdentifier: "xcodeVC") as! UITableViewController
     }()
+    
     @IBAction func MenuActions(_ sender: Any) {
-        
+        self.MenuButtons[previousButton].backgroundColor = self.MenuView.backgroundColor
         guard let button = sender as? UIButton else {
             return
         }
+        
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             delegate.restrictRotation = .portrait
         }
         let value = UIInterfaceOrientation.portrait.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
-        
-        
-        
-        
-        
         self.navigationItem.title = button.titleLabel?.text
+        
+        previousButton = button.tag
+        
         switch button.tag {
         case 0:
             self.navigationItem.title = "iOS Club"
             changeContainer(to: HomeViewController)
+            button.backgroundColor = selectButtonColor
             break
         case 3:
             changeContainer(to: ActivityViewController)
+            button.backgroundColor = selectButtonColor
             break
         case 4:
-            button.backgroundColor = .cyan
             changeContainer(to: CurriculumViewController)
+            button.backgroundColor = selectButtonColor
             break
         case 7:
-            //button.backgroundColor = .cyan
             changeContainer(to: XcodeViewController)
+            button.backgroundColor = selectButtonColor
             break
         case 8:
-            
             if let delegate = UIApplication.shared.delegate as? AppDelegate {
                 delegate.restrictRotation = .landscapeRight
             }
             let value = UIInterfaceOrientation.landscapeRight.rawValue
             UIDevice.current.setValue(value, forKey: "orientation")
-            
             changeContainer(to: GameViewController)
+            button.backgroundColor = selectButtonColor
             break
         case 9:
             changeContainer(to: AboutUsViewController)
+            button.backgroundColor = selectButtonColor
             break
         default:
             changeContainer(to: HomeViewController)
+            button.backgroundColor = selectButtonColor
             break
         }
         UIView.animate(withDuration: 0.4){
@@ -118,7 +119,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     }
     
     override func viewDidLoad() {
-        
+        self.MenuButtons[0].backgroundColor = selectButtonColor
         self.MenuXpos = Int(UIScreen.main.bounds.width + self.MenuView.frame.width / 2 + 1)
         
         super.viewDidLoad()
@@ -133,6 +134,8 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         self.editProfileButton.layer.borderWidth = 1
         self.editProfileButton.layer.borderColor = UIColor.white.cgColor
         self.editProfileButton.layer.cornerRadius = 5
+       
+        
        
     }
 
@@ -165,30 +168,28 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var MenuView: UIView!
     @IBOutlet weak var profilePicture: UIImageView!
-    var MenuChange = 0
-    var MenuXpos = 0
-    
-    
-    
+    @IBOutlet var MenuButtons: [UIButton]!
     @IBOutlet var editProfileButton: UIButton!
     @IBOutlet var logoutButton: UIButton!
+    var previousButton = 0
+    var MenuChange = 0
+    var MenuXpos = 0
+    var selectedViewController:UIViewController = UIViewController()
+    var HomeViewController:TheMainTableViewController = TheMainTableViewController()
+    let selectButtonColor = UIColor(red: 244/255, green: 158/255, blue: 39/255, alpha: 1)
     
     override func viewWillAppear(_ animated: Bool) {
         MenuView.alpha = 0
         
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ContainerSegue"{
             HomeViewController = segue.destination as! TheMainTableViewController
         }
-    }
-    /*
-    // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

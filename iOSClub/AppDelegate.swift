@@ -37,9 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
         
-        
-        
-        
         // Override point for customization after application launch.
     }
     

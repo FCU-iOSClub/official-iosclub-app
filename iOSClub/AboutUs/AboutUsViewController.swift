@@ -13,24 +13,24 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
     @IBOutlet weak var topView: UIView!
     var cadres:[Cadres] = [
         Cadres("現任幹部(第三屆)", [
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。")]
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘", "社長", "劉祐炘", "佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329")]
         ),
         Cadres("第二屆", [
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。"),
-            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。")
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997"),
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997"),
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997"),
+            Cadre("陳語涵","副社長","陳語涵","臭臉工程師，惜字千金，遇到不利自己的事情，就會開始亂叫。", "fb://profile/100002795974997")
             ]),
         Cadres("第ㄧ屆", [
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),
-            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。")
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329"),
+            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。", "fb://profile/100001324861329")
             ])]
     
     override func viewDidLoad() {
@@ -55,7 +55,8 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
                                     item["img"] ?? "default",
                                     item["position"] ?? "職位",
                                     item["name"] ?? "名字",
-                                    item["introduce"] ?? "介紹"
+                                    item["introduce"] ?? "介紹",
+                                    item["fbUrl"] ?? "fb://page/?id=414453055238471"
                                 ))
                             }
                                 
@@ -63,7 +64,6 @@ class AboutUsViewController: CollapsibleTableSectionViewController {
                                     generation["num"] as? String ?? "屆數",
                                     temp
                                 ))
-                                //            Cadre("劉祐炘","社長","劉祐炘","佛系工程師，Beatbox兼冷笑話大師，程式能力和冷笑話冷的程度成正比。"),                            }
                             
                             self.tableView.reloadData()
                         }
@@ -103,11 +103,9 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
             cell.photo.image = UIImage(named:cadres[index].items[indexPath.row].photo)
         }
         
-        
         cell.position.text = cadres[index].items[indexPath.row].position
         cell.name.text = cadres[index].items[indexPath.row].name
         cell.introduce.text = cadres[index].items[indexPath.row].introduce
-        
         return cell
     }
     func collapsibleTableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -120,6 +118,12 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
     
     func shouldCollapseByDefault(_ tableView: UITableView) -> Bool {
         return true
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let urlString = cadres[indexPath.section].items[indexPath.row].getFbUrl()
+        UIApplication.shared.open(URL(string: urlString)!)
     }
     
 }

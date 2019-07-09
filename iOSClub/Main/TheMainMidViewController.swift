@@ -135,7 +135,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         self.editProfileButton.layer.borderColor = UIColor.white.cgColor
         self.editProfileButton.layer.cornerRadius = 5
        
-        
+    
        
     }
 
@@ -171,6 +171,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     @IBOutlet var MenuButtons: [UIButton]!
     @IBOutlet var editProfileButton: UIButton!
     @IBOutlet var logoutButton: UIButton!
+    
     var previousButton = 0
     var MenuChange = 0
     var MenuXpos = 0

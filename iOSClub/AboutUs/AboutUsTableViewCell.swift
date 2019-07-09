@@ -10,6 +10,7 @@ import UIKit
 
 @IBDesignable class AboutUsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var position: UILabel!
     @IBOutlet weak var name: UILabel!
@@ -25,3 +26,4 @@ import UIKit
 //    }
     
 }
+

@@ -13,11 +13,13 @@ class Cadre {
     var position:String!
     var name:String!
     var introduce:String!
-    init(_ photo:String, _ position:String,_ name:String,_ introduce:String) {
+    var fbUrl:String!
+    init(_ photo:String, _ position:String, _ name:String, _ introduce:String, _ fbUrl:String) {
         self.photo = photo
         self.position = position
         self.name = name
         self.introduce = introduce
+        self.fbUrl = fbUrl
     }
     func setPhoto(_ photo:String) {
         self.photo = photo
@@ -31,6 +33,9 @@ class Cadre {
     func setIntroduce(_ introduce:String) {
         self.introduce = introduce
     }
+    func setFbUrl(_ fbUrl:String) {
+        self.fbUrl = fbUrl
+    }
     
     func getPhoto()->String{
         return self.photo
@@ -43,6 +48,9 @@ class Cadre {
     }
     func getIntroduce()->String{
         return self.introduce
+    }
+    func getFbUrl()->String{
+        return self.fbUrl
     }
 }
 

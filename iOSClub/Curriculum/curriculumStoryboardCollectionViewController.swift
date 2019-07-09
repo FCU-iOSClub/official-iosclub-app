@@ -107,9 +107,12 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
         return cell
     }
     override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        cell.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        cell.alpha = 0.2
+        
         UIView.animate(withDuration: 0.4) {
             cell.transform = CGAffineTransform.identity
+            cell.alpha = 1
         }
     }
     

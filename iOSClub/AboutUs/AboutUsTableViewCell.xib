@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +20,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="介紹" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ef9-Aw-P1i">
-                        <rect key="frame" x="104" y="43.5" width="285" height="16"/>
+                        <rect key="frame" x="102" y="43.5" width="287" height="16"/>
                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -49,13 +49,18 @@
                             <constraint firstAttribute="height" constant="70" id="DH2-aD-BaU"/>
                         </constraints>
                     </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hcR-hT-ec0">
+                        <rect key="frame" x="35" y="35" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="A3S-Yd-pwc" firstAttribute="leading" secondItem="5rk-0S-x0o" secondAttribute="trailing" constant="14" id="0Qt-yL-gGg"/>
+                    <constraint firstItem="hcR-hT-ec0" firstAttribute="centerX" secondItem="5rk-0S-x0o" secondAttribute="centerX" id="3W4-cK-bw3"/>
                     <constraint firstAttribute="trailing" secondItem="Ef9-Aw-P1i" secondAttribute="trailing" constant="20" id="6Wz-DY-0Ki"/>
                     <constraint firstItem="A3S-Yd-pwc" firstAttribute="top" secondItem="5rk-0S-x0o" secondAttribute="top" constant="5" id="9yk-Ux-gOm"/>
                     <constraint firstItem="5rk-0S-x0o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="DT7-L4-XSO"/>
-                    <constraint firstItem="Ef9-Aw-P1i" firstAttribute="leading" secondItem="5rk-0S-x0o" secondAttribute="trailing" constant="24" id="P2j-sc-hlK"/>
+                    <constraint firstItem="hcR-hT-ec0" firstAttribute="centerY" secondItem="5rk-0S-x0o" secondAttribute="centerY" id="LmN-Lw-qd4"/>
+                    <constraint firstItem="Ef9-Aw-P1i" firstAttribute="leading" secondItem="5rk-0S-x0o" secondAttribute="trailing" constant="22" id="P2j-sc-hlK"/>
                     <constraint firstItem="Ef9-Aw-P1i" firstAttribute="top" secondItem="A3S-Yd-pwc" secondAttribute="bottom" constant="8" id="S6D-HX-4Tg"/>
                     <constraint firstAttribute="bottom" secondItem="5rk-0S-x0o" secondAttribute="bottom" constant="10" id="Vxv-uI-Awp"/>
                     <constraint firstItem="5rk-0S-x0o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="YxS-PI-7Qc"/>
@@ -64,11 +69,12 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="introduce" destination="Ef9-Aw-P1i" id="ClZ-38-hxT"/>
+                <outlet property="loading" destination="hcR-hT-ec0" id="Xyx-qZ-x47"/>
                 <outlet property="name" destination="EA5-HB-vSj" id="fN0-wf-ZPo"/>
                 <outlet property="photo" destination="5rk-0S-x0o" id="JV2-S3-suH"/>
                 <outlet property="position" destination="8yi-N1-zrf" id="r9l-46-7Hx"/>
             </connections>
-            <point key="canvasLocation" x="112.31884057971016" y="51.5625"/>
+            <point key="canvasLocation" x="111.59420289855073" y="51.5625"/>
         </tableViewCell>
     </objects>
 </document>

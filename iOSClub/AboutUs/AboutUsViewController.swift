@@ -28,7 +28,9 @@ extension UIImageView {
             DispatchQueue.main.async() {
                 let imageToCache = UIImage(data: data)
                 imageCache.setObject(imageToCache!, forKey: url as AnyObject)
-                self.image = imageToCache
+                if self.image == nil{
+                    self.image = imageToCache
+                }
                 completion()
             }
         }
@@ -124,6 +126,7 @@ extension AboutUsViewController: CollapsibleTableSectionDelegate {
     func collapsibleTableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: AboutUsTableViewCell = tableView.dequeueReusableCell(withIdentifier: "AboutUsTableViewCell") as? AboutUsTableViewCell ?? AboutUsTableViewCell(style: .default, reuseIdentifier: "AboutUsTableViewCell")
         let index = indexPath.section
+        
         if let img = cadres[index].items[indexPath.row].photo {
             cell.photo.image = nil
             cell.loading.startAnimating()

@@ -9,6 +9,8 @@
 import UIKit
 import ImageSlideshow
 
+//https://github.com/zvonicek/ImageSlideshow
+
 class ImageSlideshowViewController: UIViewController {
     @IBOutlet weak var slideView: ImageSlideshow!
     

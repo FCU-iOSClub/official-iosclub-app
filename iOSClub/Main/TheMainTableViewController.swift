@@ -16,7 +16,6 @@ class TheMainTableViewController: UITableViewController{
             print("URLError")
             return
         }
-        
         print(UIApplication.shared.canOpenURL(url))
         UIApplication.shared.open(url)
         //mailto:iosclub@mail.fcu.edu.tw

@@ -7,30 +7,68 @@
 //
 
 import UIKit
-
+import Alamofire
 private let reuseIdentifier = "Cell"
-var currarr:[String] = ["第一堂社課","第二堂社課","第三堂社課","第五堂社課","第六堂社課","第七堂社課"]
-var datearr:[String] = ["2019.05.31","2019.06.04","2019.06.10","2019.06.19","2019.06.22","2019.06.30"]
-var linkarr:[String] = [
-    "https://drive.google.com/file/d/1M8yP804MCF_wmtaVeOCTk-0_FEPs0ghe/view",
-    "https://drive.google.com/file/d/19M0So61yIaGOj7r0iY3p2OPVvRmf5T_u/view",
-    "https://drive.google.com/file/d/1Qa3FVzDGB8ccZBLju9EZBj1Mw1e6KDrl/view",
-    "https://drive.google.com/file/d/1s5gVC_UYKM4x12PkHl7lMATRJJ0ybI45/view",
-    "https://drive.google.com/file/d/1D53ktmb-Z7pCTnV3IHEssCGSQ2AGRIfd/view",
-    "https://drive.google.com/file/d/1D5AQ-v1-mbmPQfVR-q8KeIqxHjPBlXJ6/view",
 
-    ]
-let viewSize = UIScreen.main.nativeBounds.width
+class Course{
+    var name:String!
+    var url:String!
+    var date:String!
+    init(_ date:String, _ name:String, _ url:String) {
+        self.date = date
+        self.name = name
+        self.url = url
+    }
+}
+
+
+
 class curriculumStoryboardCollectionViewController: UICollectionViewController {
+    var curriculum:[Course] = []
+    var currarr:[String] = ["第一堂社課","第二堂社課","第三堂社課","第五堂社課","第六堂社課","第七堂社課"]
+    var datearr:[String] = ["2019.05.31","2019.06.04","2019.06.10","2019.06.19","2019.06.22","2019.06.30"]
+    var linkarr:[String] = [
+        "https://drive.google.com/file/d/1M8yP804MCF_wmtaVeOCTk-0_FEPs0ghe/view",
+        "https://drive.google.com/file/d/19M0So61yIaGOj7r0iY3p2OPVvRmf5T_u/view",
+        "https://drive.google.com/file/d/1Qa3FVzDGB8ccZBLju9EZBj1Mw1e6KDrl/view",
+        "https://drive.google.com/file/d/1s5gVC_UYKM4x12PkHl7lMATRJJ0ybI45/view",
+        "https://drive.google.com/file/d/1D53ktmb-Z7pCTnV3IHEssCGSQ2AGRIfd/view",
+        "https://drive.google.com/file/d/1D5AQ-v1-mbmPQfVR-q8KeIqxHjPBlXJ6/view",
+        
+        ]
+    let viewSize = UIScreen.main.nativeBounds.width
+    var refreshControl:UIRefreshControl!
+    
+    
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        print(viewSize)
         layout.sectionInset.left = viewSize/25
         layout.sectionInset.right = viewSize/25
         
+        self.loadDataFromServer()
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(loadDataFromServer), for: .valueChanged)
+        self.collectionView.addSubview(refreshControl)
       
+    }
+    @objc func loadDataFromServer(){
+        
+        Alamofire.request("http://127.0.0.1:2914/api/v1/curriculum").responseJSON(completionHandler:
+            {(res) in
+                if let result = res.result.value{
+                    if let curriuculum = result as? [[String:String]]{
+                        self.curriculum = []
+                        for i in curriuculum{
+                            self.curriculum.append(Course(i["date"]!, i["name"]!, i["url"]!))
+                        }
+                        self.refreshControl.endRefreshing()
+                        self.collectionView.reloadData()
+                    }
+                }
+        })
     }
 
     /*
@@ -53,19 +91,28 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 6
+        return curriculum.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! CurriculumCollectionViewCell
         //cell.image.image = UIImage(named: "課程背景") //圖像不更動
 
-        cell.date.text = datearr[indexPath.row] //日期
-        cell.curr.text = currarr[indexPath.row] //課程
-        cell.text.text = linkarr[indexPath.row] //網址
+        cell.date.text = curriculum[indexPath.row].date //日期
+        cell.curr.text = curriculum[indexPath.row].name //課程
+        cell.text.text = curriculum[indexPath.row].url //網址
+        
+        
         
         return cell
     }
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        UIView.animate(withDuration: 0.4) {
+            cell.transform = CGAffineTransform.identity
+        }
+    }
+    
 
     // MARK: UICollectionViewDelegate
 

@@ -111,6 +111,7 @@
                         </connections>
                     </collectionView>
                     <connections>
+                        <outlet property="collectionView" destination="4Hu-IT-YNN" id="RSG-Fp-NaD"/>
                         <outlet property="layout" destination="pJH-We-oAJ" id="trL-ab-aBa"/>
                     </connections>
                 </collectionViewController>

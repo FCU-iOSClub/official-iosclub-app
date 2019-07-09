@@ -13,7 +13,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     lazy var AboutUsViewController:AboutUsViewController = {
         return UIStoryboard(name: "AboutUsStoryboard", bundle: nil).instantiateViewController(withIdentifier: "AboutUsStoryboardID") as! AboutUsViewController
     }()
-    lazy var CurriculumViewController:curriculumStoryboardCollectionViewController = {
+     var CurriculumViewController:curriculumStoryboardCollectionViewController = {
         return UIStoryboard(name: "curriculumStoryboard", bundle: nil).instantiateViewController(withIdentifier: "curriculumStoryboard") as! curriculumStoryboardCollectionViewController
     }()
     lazy var ActivityViewController:ActivityViewController = {
@@ -134,6 +134,8 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         self.editProfileButton.layer.borderWidth = 1
         self.editProfileButton.layer.borderColor = UIColor.white.cgColor
         self.editProfileButton.layer.cornerRadius = 5
+       
+        
        
     }
 

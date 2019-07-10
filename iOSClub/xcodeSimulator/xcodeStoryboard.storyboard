@@ -53,7 +53,7 @@
                                 <connections>
                                     <outlet property="labtext" destination="KEY-sO-kPM" id="ptW-qd-ZCl"/>
                                     <outlet property="mage" destination="0Vx-u9-GCZ" id="HYU-dl-8kN"/>
-                                    <segue destination="BSR-iK-i95" kind="showDetail" id="ga5-hh-nE8"/>
+                                    <segue destination="BSR-iK-i95" kind="show" id="ga5-hh-nE8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

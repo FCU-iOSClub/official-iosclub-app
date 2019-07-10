@@ -14,6 +14,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let imageCache = NSCache<AnyObject, AnyObject>()
+    var navigationBarAppearace = UINavigationBar.appearance()
     
     var window: UIWindow?
     var restrictRotation:UIInterfaceOrientationMask = .portrait
@@ -36,6 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //延遲loading
         //Thread.sleep(forTimeInterval: 10.0)
+        navigationBarAppearace.tintColor = .white
         
         return true
         

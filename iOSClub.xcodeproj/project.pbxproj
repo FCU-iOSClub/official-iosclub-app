@@ -22,7 +22,6 @@
 		24A217CF22D44285008E366F /* XcodeSimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A217CE22D44285008E366F /* XcodeSimulatorViewController.swift */; };
 		24F174C622CEF60F00C8181D /* GamePlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174C522CEF60F00C8181D /* GamePlayingViewController.swift */; };
 		24F174D122D05CF200C8181D /* GameFinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F174D022D05CF200C8181D /* GameFinishViewController.swift */; };
-		3B019EF622CF33E8009AD27B /* Cadre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B785B55322CDD3AB00F6BAB0 /* Cadre.swift */; };
 		3B019EFD22CF5F07009AD27B /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B019EFC22CF5F07009AD27B /* Quiz.swift */; };
 		3B0A462D22CDB162008CCF1C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0A462C22CDB162008CCF1C /* GameViewController.swift */; };
 		3B0A463122CDB364008CCF1C /* GameStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B0A463022CDB364008CCF1C /* GameStoryboard.storyboard */; };
@@ -269,11 +268,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = FCUiosclub;
 				TargetAttributes = {
 					157AAC2722CC91B7001A8154 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -378,7 +378,6 @@
 				4225045A22CF229700063948 /* Timeline.swift in Sources */,
 				24A217CF22D44285008E366F /* XcodeSimulatorViewController.swift in Sources */,
 				427F9B4522CFDA4200C525C9 /* AboutUsViewController.swift in Sources */,
-				3B019EF622CF33E8009AD27B /* Cadre.swift in Sources */,
 				7698357522D1DCFA00979602 /* xcodeTableViewController.swift in Sources */,
 				767AF5F422D3C42B0088CC7F /* xcodeLibTableViewCell.swift in Sources */,
 				1176271D22CE0E4500A99999 /* ActivityViewController.swift in Sources */,
@@ -461,7 +460,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -515,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -530,14 +529,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JJ9C6N9PC3;
+				DEVELOPMENT_TEAM = HDTRV4E38X;
 				INFOPLIST_FILE = iOSClub/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.iosclub.iOSClub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahlye.iOSClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,14 +549,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JJ9C6N9PC3;
+				DEVELOPMENT_TEAM = HDTRV4E38X;
 				INFOPLIST_FILE = iOSClub/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tw.iosclub.iOSClub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahlye.iOSClub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

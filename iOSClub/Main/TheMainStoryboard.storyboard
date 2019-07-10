@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -79,7 +79,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="ZMk-Ko-uB8">
                                         <rect key="frame" x="0.0" y="215" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMk-Ko-uB8" id="CUd-Ts-Kft">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZMk-Ko-uB8" id="CUd-Ts-Kft">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -90,9 +90,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="架構" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-Ex-RdH">
-                                                    <rect key="frame" x="10" y="47" width="394" height="240"/>
+                                                    <rect key="frame" x="10" y="47" width="1375.5" height="838"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="240" id="EYx-Vq-KZa"/>
                                                         <constraint firstAttribute="width" secondItem="vdD-Ex-RdH" secondAttribute="height" multiplier="197:120" id="GkH-fu-Skn"/>
                                                     </constraints>
                                                 </imageView>
@@ -155,7 +154,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEN-qa-aNt">
-                                                    <rect key="frame" x="188" y="14" width="38.5" height="38.5"/>
+                                                    <rect key="frame" x="188" y="14.5" width="38.5" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="38.5" id="Oe2-PJ-0kz"/>
                                                         <constraint firstAttribute="height" constant="38.5" id="afP-b1-9jc"/>
@@ -166,7 +165,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-ei-k7m">
-                                                    <rect key="frame" x="286.5" y="14" width="38.5" height="38.5"/>
+                                                    <rect key="frame" x="286.5" y="14.5" width="38.5" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="38.5" id="43U-GC-P98"/>
                                                         <constraint firstAttribute="height" constant="38.5" id="QyS-on-ZZ4"/>
@@ -177,7 +176,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-AS-Q2e">
-                                                    <rect key="frame" x="89.5" y="14" width="38.5" height="38.5"/>
+                                                    <rect key="frame" x="89.5" y="14.5" width="38.5" height="38.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="38.5" id="88F-hv-9t8"/>
                                                         <constraint firstAttribute="width" constant="38.5" id="j1a-lQ-Bxv"/>
@@ -605,6 +604,7 @@
                             <constraint firstItem="VHP-Di-zFv" firstAttribute="leading" secondItem="Ije-nm-ebR" secondAttribute="leadingMargin" constant="13" id="bAW-U1-IuJ"/>
                             <constraint firstAttribute="bottom" secondItem="lev-gb-FkH" secondAttribute="bottom" constant="10" id="qf2-2S-ez2"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="mNd-Af-HYB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="llD-1q-dF1" userLabel="First Responder" sceneMemberID="firstResponder"/>

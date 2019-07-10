@@ -24,7 +24,7 @@ class Course{
 
 
 class curriculumStoryboardCollectionViewController: UICollectionViewController {
-    var curriculum:[Course] = []
+    
     var currarr:[String] = ["第一堂社課","第二堂社課","第三堂社課","第五堂社課","第六堂社課","第七堂社課"]
     var datearr:[String] = ["2019.05.31","2019.06.04","2019.06.10","2019.06.19","2019.06.22","2019.06.30"]
     var linkarr:[String] = [
@@ -36,6 +36,13 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
         "https://drive.google.com/file/d/1D5AQ-v1-mbmPQfVR-q8KeIqxHjPBlXJ6/view",
         
         ]
+    lazy var curriculum:[Course] = {
+        var c = [Course]()
+        for i in 0...self.currarr.count - 1{
+            c.append(Course(self.datearr[i], self.currarr[i], self.linkarr[i]))
+        }
+        return c
+    }()
     let viewSize = UIScreen.main.nativeBounds.width
     var refreshControl:UIRefreshControl!
     
@@ -47,11 +54,11 @@ class curriculumStoryboardCollectionViewController: UICollectionViewController {
         layout.sectionInset.left = viewSize/25
         layout.sectionInset.right = viewSize/25
         
-        self.loadDataFromServer()
-        
-        refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(loadDataFromServer), for: .valueChanged)
-        self.collectionView.addSubview(refreshControl)
+//        self.loadDataFromServer()
+//
+//        refreshControl = UIRefreshControl()
+//        refreshControl.addTarget(self, action: #selector(loadDataFromServer), for: .valueChanged)
+//        self.collectionView.addSubview(refreshControl)
       
     }
     @objc func loadDataFromServer(){

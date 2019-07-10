@@ -60,6 +60,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
             button.backgroundColor = selectButtonColor
             break
         case 8:
+            self.navigationController?.isNavigationBarHidden = true
             if let delegate = UIApplication.shared.delegate as? AppDelegate {
                 delegate.restrictRotation = .landscapeRight
             }
@@ -67,6 +68,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
             UIDevice.current.setValue(value, forKey: "orientation")
             changeContainer(to: GameViewController)
             button.backgroundColor = selectButtonColor
+            
             break
         case 9:
             changeContainer(to: AboutUsViewController)
@@ -188,6 +190,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
         if segue.identifier == "ContainerSegue"{
             HomeViewController = segue.destination as! TheMainTableViewController
         }
+        print(123)
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

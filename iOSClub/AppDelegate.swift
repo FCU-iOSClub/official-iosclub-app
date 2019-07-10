@@ -14,6 +14,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     let imageCache = NSCache<AnyObject, AnyObject>()
+    var navigationBarAppearace = UINavigationBar.appearance()
     
     var window: UIWindow?
     var restrictRotation:UIInterfaceOrientationMask = .portrait
@@ -27,15 +28,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyboard = UIStoryboard(name: "xcodeStoryboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "TheMainStoryboard", bundle: nil)
         
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "xcodeVC")
+        let initialViewController = storyboard.instantiateViewController(withIdentifier: "TheMainStoryboardVC")
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
         
         //延遲loading
         //Thread.sleep(forTimeInterval: 10.0)
+        navigationBarAppearace.tintColor = .white
         
         return true
         

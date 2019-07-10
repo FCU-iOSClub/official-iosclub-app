@@ -61,7 +61,7 @@ class ActivityViewController: UIViewController,UITableViewDelegate,UITableViewDa
             return cell
         }
         
-        var (timelinePoint, timelineBackColor, title,date, description, lineInfo, thumbnail, illustration) = sectionData[indexPath.row]
+        let (timelinePoint, timelineBackColor, title,date, description, lineInfo, thumbnail, illustration) = sectionData[indexPath.row]
         var timelineFrontColor = UIColor.clear
         if (indexPath.row > 0) {
             timelineFrontColor = sectionData[indexPath.row - 1].1

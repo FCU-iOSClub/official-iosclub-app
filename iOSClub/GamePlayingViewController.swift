@@ -53,13 +53,13 @@ class GamePlayingViewController: UIViewController {
         exit(0)
     }
     @IBAction func RefreshButton(_ sender: Any) {
-        QuestionCount += 1
         if choosed == 0{
             let Action = UIAlertAction(title: "OK", style: .default, handler: nil)
             let Alert = UIAlertController(title: "等等！", message: "你還沒答題啊", preferredStyle: .alert)
             Alert.addAction(Action)
             present(Alert, animated: true, completion: nil)
         }else{
+            QuestionCount += 1
             if QuestionCount == 10{
                 ToEndgameView()
             }

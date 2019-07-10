@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="landscape">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController storyboardIdentifier="GameViewController" id="6G2-W1-GIW" customClass="GameViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="apP-Ig-qpX">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ylo-AW-09w">
-                                <rect key="frame" x="782" y="20" width="50" height="50"/>
+                                <rect key="frame" x="597" y="20" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Bzz-S7-kyr"/>
                                     <constraint firstAttribute="width" constant="50" id="QgH-er-QLu"/>
@@ -30,10 +30,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="G7k-Hp-ZvR">
-                                <rect key="frame" x="134.5" y="137" width="627" height="16"/>
+                                <rect key="frame" x="100" y="123.5" width="467" height="16"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgD-Y6-bnk">
-                                <rect key="frame" x="440" y="153" width="70" height="22"/>
+                                <rect key="frame" x="318.5" y="139.5" width="70" height="22"/>
                                 <state key="normal" title="Button" image="開始按鈕"/>
                                 <connections>
                                     <segue destination="bGL-UD-leW" kind="show" id="lAb-IG-X0Q"/>
@@ -62,14 +62,14 @@
             <objects>
                 <viewController id="bGL-UD-leW" customClass="GamePlayingViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Va0-AS-Gge">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-cA-RLe" userLabel="AnswerView1">
-                                <rect key="frame" x="112" y="95" width="224" height="224"/>
+                                <rect key="frame" x="83.5" y="104" width="166.5" height="167"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google(真)" translatesAutoresizingMaskIntoConstraints="NO" id="ErG-S6-1We">
-                                        <rect key="frame" x="15" y="15" width="194" height="194"/>
+                                        <rect key="frame" x="15" y="15" width="136.5" height="137"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -92,7 +92,7 @@
                                 </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-pB-2CW">
-                                <rect key="frame" x="782" y="20" width="50" height="50"/>
+                                <rect key="frame" x="597" y="20" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IRW-HT-TCn"/>
                                     <constraint firstAttribute="width" constant="50" id="NC0-4G-2n8"/>
@@ -103,10 +103,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-2B-Cce" userLabel="AnswerView2">
-                                <rect key="frame" x="560" y="95" width="224" height="224"/>
+                                <rect key="frame" x="417" y="104" width="166.5" height="167"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Google(假)" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-Vb-g53">
-                                        <rect key="frame" x="15" y="15" width="194" height="194"/>
+                                        <rect key="frame" x="15" y="15" width="136.5" height="137"/>
                                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -130,7 +130,7 @@
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字母的顏色錯了" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCm-LS-gAH">
-                                <rect key="frame" x="363" y="58" width="170.5" height="29"/>
+                                <rect key="frame" x="248" y="58" width="171" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -143,25 +143,25 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="答對圖片" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-13-Xiu">
-                                <rect key="frame" x="216" y="327" width="16" height="16"/>
+                                <rect key="frame" x="159" y="279" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AC8-13-Xiu" secondAttribute="height" multiplier="1:1" id="KkN-xY-pZ8"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="答錯圖片" translatesAutoresizingMaskIntoConstraints="NO" id="0Jk-Eu-qt4">
-                                <rect key="frame" x="664" y="327" width="16" height="16"/>
+                                <rect key="frame" x="492.5" y="279" width="16" height="16"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Jk-Eu-qt4" secondAttribute="height" multiplier="1:1" id="yw2-kb-cOe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx3-Ch-bGb">
-                                <rect key="frame" x="418.5" y="192" width="59.5" height="30"/>
+                                <rect key="frame" x="304" y="172.5" width="59" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7h-qm-Uai">
-                                <rect key="frame" x="341" y="330" width="214" height="53"/>
+                                <rect key="frame" x="226.5" y="312" width="214" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="8Mf-qP-yyV"/>
                                     <constraint firstAttribute="width" constant="214" id="p7i-HX-1tf"/>
@@ -227,11 +227,11 @@
             <objects>
                 <viewController storyboardIdentifier="EndGame" id="ya5-46-oQX" customClass="GameFinishViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mXj-d5-m12">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPg-4U-YuQ">
-                                <rect key="frame" x="782" y="20" width="50" height="50"/>
+                                <rect key="frame" x="597" y="20" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="LuK-gt-J9j"/>
                                     <constraint firstAttribute="height" constant="50" id="qZ8-SW-XyM"/>
@@ -242,14 +242,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-Bb-Uc5">
-                                <rect key="frame" x="192.5" y="58" width="511" height="128"/>
+                                <rect key="frame" x="78" y="40" width="511" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="511" id="Lt2-bX-wjn"/>
                                     <constraint firstAttribute="height" constant="128" id="W83-CU-rep"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5V-2J-doz">
-                                <rect key="frame" x="341" y="313" width="214" height="53"/>
+                                <rect key="frame" x="226.5" y="295" width="214" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="OpM-sJ-12Q"/>
                                     <constraint firstAttribute="width" constant="214" id="WhB-W5-Pgp"/>
@@ -260,7 +260,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G4E-OH-fES">
-                                <rect key="frame" x="369" y="191" width="158.5" height="33.5"/>
+                                <rect key="frame" x="254.5" y="173" width="158.5" height="33.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總分：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i00-3k-H6d">
                                         <rect key="frame" x="0.0" y="0.0" width="85.5" height="33.5"/>
@@ -277,7 +277,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkE-Te-quf">
-                                <rect key="frame" x="341" y="241" width="214" height="53"/>
+                                <rect key="frame" x="226.5" y="223" width="214" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="7vh-Dh-loD"/>
                                     <constraint firstAttribute="width" constant="214" id="PXi-Wb-9HQ"/>
@@ -290,7 +290,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="xdt-Bb-Uc5" firstAttribute="top" secondItem="eU1-3k-G4b" secondAttribute="top" constant="58" id="16J-E0-dUk"/>
                             <constraint firstItem="xdt-Bb-Uc5" firstAttribute="centerX" secondItem="mXj-d5-m12" secondAttribute="centerX" id="46M-nD-m4d"/>
                             <constraint firstItem="q5V-2J-doz" firstAttribute="top" secondItem="OkE-Te-quf" secondAttribute="bottom" constant="19" id="Hen-xh-Sfb"/>
                             <constraint firstItem="eU1-3k-G4b" firstAttribute="bottom" secondItem="q5V-2J-doz" secondAttribute="bottom" constant="27" id="Hua-Ms-Nau"/>

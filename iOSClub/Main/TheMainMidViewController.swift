@@ -60,6 +60,7 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
             button.backgroundColor = selectButtonColor
             break
         case 8:
+//            MenuAnimation()
             self.navigationController?.isNavigationBarHidden = true
             if let delegate = UIApplication.shared.delegate as? AppDelegate {
                 delegate.restrictRotation = .landscapeRight
@@ -140,12 +141,34 @@ class TheMainMidViewController: UIViewController,UIScrollViewDelegate{
     
        
     }
+    
+    @IBAction func closeGame(sender: UIStoryboardSegue) {
+//        MenuAnimation()
+        self.navigationController?.isNavigationBarHidden = false
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.restrictRotation = .portrait
+        }
+        let value = UIInterfaceOrientation.portrait.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        self.navigationItem.title = "iOS Club"
+        changeContainer(to: HomeViewController)
+        
+//        self.MenuXpos -= Int(self.MenuView.frame.width)
+        MenuChange = 0
+        self.containerView.center.x += self.MenuView.frame.width
+        self.containerView.alpha = 1
+        self.MenuView.alpha = 0
+        self.MenuView.center.x += self.MenuView.frame.width
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     @IBAction func clickMenu(_ sender: Any) {
+        MenuAnimation()
+    }
+    func MenuAnimation(){
         MenuView.center.x = CGFloat(self.MenuXpos)
         if MenuChange == 0{
             UIView.animate(withDuration: 0.4){

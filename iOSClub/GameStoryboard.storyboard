@@ -26,14 +26,14 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="關閉按鈕"/>
                                 <connections>
-                                    <action selector="ExitButton:" destination="6G2-W1-GIW" eventType="touchUpInside" id="5JS-mh-l6I"/>
+                                    <segue destination="GuA-eP-M58" kind="unwind" unwindAction="closeGameWithSender:" id="UJR-kj-cRT"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="G7k-Hp-ZvR">
-                                <rect key="frame" x="100" y="123.5" width="467" height="16"/>
+                                <rect key="frame" x="100" y="13.5" width="467.00000000000023" height="236"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgD-Y6-bnk">
-                                <rect key="frame" x="318.5" y="139.5" width="70" height="22"/>
+                                <rect key="frame" x="221.5" y="249.5" width="264" height="53"/>
                                 <state key="normal" title="Button" image="開始按鈕"/>
                                 <connections>
                                     <segue destination="bGL-UD-leW" kind="show" id="lAb-IG-X0Q"/>
@@ -54,6 +54,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PO3-oM-oXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GuA-eP-M58" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-50" y="138"/>
         </scene>
@@ -99,7 +100,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="關閉按鈕"/>
                                 <connections>
-                                    <action selector="ExitButton:" destination="bGL-UD-leW" eventType="touchUpInside" id="r41-3q-TGZ"/>
+                                    <segue destination="UyE-ak-4nv" kind="unwind" unwindAction="closeGameWithSender:" id="WKk-ao-iOX"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PYn-2B-Cce" userLabel="AnswerView2">
@@ -136,20 +137,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="nzj-Er-ie6">
-                                <rect key="frame" x="0.0" y="12" width="207" height="67"/>
+                                <rect key="frame" x="0.0" y="12" width="207.00000000000023" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="67" id="oIj-BP-YdT"/>
                                     <constraint firstAttribute="width" constant="207" id="yQp-br-aHf"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="答對圖片" translatesAutoresizingMaskIntoConstraints="NO" id="AC8-13-Xiu">
-                                <rect key="frame" x="159" y="279" width="16" height="16"/>
+                                <rect key="frame" x="131.5" y="279" width="71" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="AC8-13-Xiu" secondAttribute="height" multiplier="1:1" id="KkN-xY-pZ8"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="答錯圖片" translatesAutoresizingMaskIntoConstraints="NO" id="0Jk-Eu-qt4">
-                                <rect key="frame" x="492.5" y="279" width="16" height="16"/>
+                                <rect key="frame" x="465" y="279" width="71" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0Jk-Eu-qt4" secondAttribute="height" multiplier="1:1" id="yw2-kb-cOe"/>
                                 </constraints>
@@ -209,6 +210,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8qW-0Z-wlC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="UyE-ak-4nv" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="a2R-DX-DxN" userLabel="Left">
                     <connections>
                         <action selector="CorrectOrIncorrectJudge:" destination="bGL-UD-leW" id="eRR-Z7-pzu"/>
@@ -238,11 +240,11 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="關閉按鈕"/>
                                 <connections>
-                                    <action selector="ExitButton:" destination="ya5-46-oQX" eventType="touchUpInside" id="QoB-Y9-e0R"/>
+                                    <segue destination="T3U-3N-kXc" kind="unwind" unwindAction="closeGameWithSender:" id="KCG-NP-TF8"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="遊戲標題文字" translatesAutoresizingMaskIntoConstraints="NO" id="xdt-Bb-Uc5">
-                                <rect key="frame" x="78" y="40" width="511" height="128"/>
+                                <rect key="frame" x="78" y="40" width="511.00000000000023" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="511" id="Lt2-bX-wjn"/>
                                     <constraint firstAttribute="height" constant="128" id="W83-CU-rep"/>
@@ -308,6 +310,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4e4-pF-Gd2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="T3U-3N-kXc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1344.6428571428571" y="134.78260869565219"/>
         </scene>

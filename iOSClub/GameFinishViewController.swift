@@ -15,9 +15,9 @@ class GameFinishViewController: UIViewController {
         
         dismiss(animated: false, completion: nil)
     }
-    @IBAction func ExitButton(_ sender: Any) {
-        exit(0)
-    }
+//    @IBAction func ExitButton(_ sender: Any) {
+//        exit(0)
+//    }
     var data = ""
     override func viewDidLoad() {
         super.viewDidLoad()

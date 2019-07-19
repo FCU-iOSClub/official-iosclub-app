@@ -21,7 +21,18 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func ExitButton(_ sender: Any) {
+//        let MainVC = UIStoryboard(name: "TheMainStoryboard", bundle:nil).instantiateViewController(withIdentifier: "TheMainMidStoryBoard") as! TheMainMidViewController
+//        print(456)
+//         MainVC.changeContainer(to: MainVC.HomeViewController)
+//        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+//            delegate.restrictRotation = .portrait
+//        }
+//
+//        let value = UIInterfaceOrientation.portrait
+//        UIDevice.current.setValue(value, forKey: "orientation")
         exit(0)
+       
+        
     }
     
     /*

@@ -218,7 +218,7 @@
         <!--iOS Club-->
         <scene sceneID="ZGW-W8-erK">
             <objects>
-                <viewController id="xHb-jX-wpK" customClass="TheMainMidViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TheMainMidStoryBoard" id="xHb-jX-wpK" customClass="TheMainMidViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="isd-Rm-GAo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

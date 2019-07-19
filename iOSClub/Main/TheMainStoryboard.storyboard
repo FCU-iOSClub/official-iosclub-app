@@ -66,7 +66,6 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="bBh-Lz-gG0" firstAttribute="leading" secondItem="B5S-yt-jM0" secondAttribute="leadingMargin" constant="10" id="AxN-fg-bNh"/>
-                                                <constraint firstItem="bBh-Lz-gG0" firstAttribute="centerX" secondItem="B5S-yt-jM0" secondAttribute="centerX" id="GKT-88-kIz"/>
                                                 <constraint firstItem="vsH-Oi-0aV" firstAttribute="top" secondItem="bBh-Lz-gG0" secondAttribute="bottom" constant="20" id="QyC-oy-e7O"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="bBh-Lz-gG0" secondAttribute="trailing" constant="10" id="SRm-Ye-HBb"/>
                                                 <constraint firstAttribute="trailing" secondItem="vsH-Oi-0aV" secondAttribute="trailing" constant="10" id="WkN-WF-HZS"/>

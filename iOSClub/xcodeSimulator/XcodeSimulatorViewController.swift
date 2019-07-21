@@ -27,7 +27,7 @@ class XcodeSimulatorViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     func MessageConversion(Title:String,Size:CGFloat,Font:String) -> Any{
-        let font = [NSAttributedString.Key.font: UIFont(name: "ArialHebrew-Bold", size: Size)!]
+        let font = [NSAttributedString.Key.font: UIFont(name: Font, size: Size)!]
         let message = NSMutableAttributedString(string: Title, attributes: font)
         return message
     }
@@ -69,8 +69,17 @@ class XcodeSimulatorViewController: UIViewController,UITableViewDelegate,UITable
             alert.setValue(MessageConversion(Title: "Label.alpha = _____________\n請輸入介於0.0~1.0的數值", Size: 30.0,Font: "ArialHebrew-Bold"), forKey: "attributedTitle")
             alert.addTextField(configurationHandler: nil)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(ale) -> Void in
-                let float = Float(alert.textFields![0].text!)
-                self.ChangeLabel.alpha = CGFloat(float!)
+                if let float = alert.textFields![0].text{
+                    if (float != "" && (Float(float)! >= 0 && Float(float)! <= 1.0)){
+                        self.ChangeLabel.alpha = CGFloat(Float(float)!)
+                    }else{
+                        let WrongAlert = UIAlertController(title: "警告", message: "請輸入正確的數值", preferredStyle: .alert)
+//                        WrongAlert.setValue(self.MessageConversion(Title: "請輸入正確的數值！", Size: 20.0, Font: "ArialHebrew-Bold"), forKey: "attributedTitle")
+                        WrongAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(WrongAlert, animated: true, completion: nil)
+                    }
+                }
+                
             }))
         case 3:
             alert.setValue(MessageConversion(Title: "Label.font = UIFont(name:______,size:\(Float(FontSize)))", Size: 30.0,Font: "ArialHebrew-Bold"), forKey: "attributedTitle")
@@ -81,11 +90,14 @@ class XcodeSimulatorViewController: UIViewController,UITableViewDelegate,UITable
             alert.setValue(MessageConversion(Title: "Label.font = UIFont(name:\(FontName),size:______)", Size: 30.0,Font: "ArialHebrew-Bold"), forKey: "attributedTitle")
             alert.addTextField(configurationHandler: nil)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {(ale) -> Void in
-                self.FontSize = CGFloat(Float(alert.textFields![0].text!)!)
-                print(self.FontSize)
+                if let inputnumber = alert.textFields![0].text{
+                    if (inputnumber != "" ){
+                        self.FontSize = CGFloat(Float(inputnumber)!)
+                    }
+                }
+                //self.FontSize = CGFloat(Float(alert.textFields![0].text!)!)
                 self.ChangeLabel.font = UIFont(name: self.FontName, size: self.FontSize)
                 self.ChangeLabel.sizeToFit()
-                print(self.FontSize)
             }))
             
         default:

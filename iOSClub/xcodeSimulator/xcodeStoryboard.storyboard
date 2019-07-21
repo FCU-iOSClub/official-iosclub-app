@@ -76,12 +76,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Co-yIh">
-                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Co-yIh" userLabel="DisplayView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="224"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAX-zg-eDh">
-                                        <rect key="frame" x="186" y="90" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAX-zg-eDh">
+                                        <rect key="frame" x="186" y="101.5" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -89,11 +88,12 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="M2q-hT-TzI"/>
+                                    <constraint firstItem="oAX-zg-eDh" firstAttribute="centerY" secondItem="VRZ-Co-yIh" secondAttribute="centerY" id="SNV-sz-Ujl"/>
+                                    <constraint firstItem="oAX-zg-eDh" firstAttribute="centerX" secondItem="VRZ-Co-yIh" secondAttribute="centerX" id="rha-wJ-PqI"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bSQ-PE-PZ9">
-                                <rect key="frame" x="0.0" y="241" width="414" height="621"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bSQ-PE-PZ9">
+                                <rect key="frame" x="0.0" y="268" width="414" height="594"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Description" textLabel="wyn-Ur-dbV" style="IBUITableViewCellStyleDefault" id="n18-pV-jvu">
@@ -119,30 +119,17 @@
                                     <outlet property="delegate" destination="BSR-iK-i95" id="aGL-yA-vrs"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huQ-Bf-zLK">
-                                <rect key="frame" x="0.0" y="762" width="414" height="100"/>
-                                <color key="backgroundColor" white="0.58222381161971826" alpha="0.52731624119718312" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="gqG-9U-Zsl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Run">
-                                    <color key="titleColor" red="0.19142290100000001" green="0.42690192859999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bSQ-PE-PZ9" firstAttribute="top" secondItem="VRZ-Co-yIh" secondAttribute="bottom" id="0aO-7L-253"/>
-                            <constraint firstItem="ioq-Jb-lMT" firstAttribute="bottom" secondItem="bSQ-PE-PZ9" secondAttribute="bottom" id="0yj-Sy-3Uw"/>
-                            <constraint firstItem="bSQ-PE-PZ9" firstAttribute="leading" secondItem="ioq-Jb-lMT" secondAttribute="leading" id="Eyu-1l-wpP"/>
-                            <constraint firstItem="VRZ-Co-yIh" firstAttribute="top" secondItem="ioq-Jb-lMT" secondAttribute="top" id="Jbq-j0-OI2"/>
-                            <constraint firstItem="ioq-Jb-lMT" firstAttribute="trailing" secondItem="bSQ-PE-PZ9" secondAttribute="trailing" id="U2M-bo-lpu"/>
-                            <constraint firstItem="VRZ-Co-yIh" firstAttribute="leading" secondItem="ioq-Jb-lMT" secondAttribute="leading" id="UVV-i5-zCq"/>
-                            <constraint firstItem="ioq-Jb-lMT" firstAttribute="trailing" secondItem="VRZ-Co-yIh" secondAttribute="trailing" id="gtm-4t-ib8"/>
-                            <constraint firstItem="huQ-Bf-zLK" firstAttribute="trailing" secondItem="bSQ-PE-PZ9" secondAttribute="trailing" id="kjG-Qi-DtB"/>
-                            <constraint firstItem="huQ-Bf-zLK" firstAttribute="leading" secondItem="bSQ-PE-PZ9" secondAttribute="leading" id="lre-FW-U7V"/>
-                            <constraint firstItem="ioq-Jb-lMT" firstAttribute="bottom" secondItem="huQ-Bf-zLK" secondAttribute="bottom" id="mhS-iM-vnK"/>
+                            <constraint firstItem="bSQ-PE-PZ9" firstAttribute="leading" secondItem="ioq-Jb-lMT" secondAttribute="leading" id="0hg-Iw-SSi"/>
+                            <constraint firstItem="VRZ-Co-yIh" firstAttribute="height" secondItem="nOl-iQ-FYg" secondAttribute="height" multiplier="0.25" id="6dG-h6-EaE"/>
+                            <constraint firstItem="bSQ-PE-PZ9" firstAttribute="trailing" secondItem="ioq-Jb-lMT" secondAttribute="trailing" id="BLg-q8-esX"/>
+                            <constraint firstItem="VRZ-Co-yIh" firstAttribute="leading" secondItem="ioq-Jb-lMT" secondAttribute="leading" id="Ie8-Xi-VX0"/>
+                            <constraint firstItem="VRZ-Co-yIh" firstAttribute="trailing" secondItem="ioq-Jb-lMT" secondAttribute="trailing" id="SDE-vF-oi6"/>
+                            <constraint firstItem="bSQ-PE-PZ9" firstAttribute="bottom" secondItem="ioq-Jb-lMT" secondAttribute="bottom" id="qRk-p0-vxy"/>
+                            <constraint firstItem="bSQ-PE-PZ9" firstAttribute="top" secondItem="VRZ-Co-yIh" secondAttribute="bottom" id="sdn-t0-RR1"/>
+                            <constraint firstItem="VRZ-Co-yIh" firstAttribute="top" secondItem="ioq-Jb-lMT" secondAttribute="top" id="uCB-aM-nwL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ioq-Jb-lMT"/>
                     </view>

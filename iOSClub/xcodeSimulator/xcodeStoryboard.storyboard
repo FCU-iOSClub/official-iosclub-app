@@ -19,22 +19,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="xcodeLibcell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="xcodeLibcell" rowHeight="120" id="y4b-hr-dns" customClass="xcodeLibTableViewCell" customModule="iOSClub" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="xcodeLibcell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="xcodeLibcell" id="y4b-hr-dns" customClass="xcodeLibTableViewCell" customModule="iOSClub" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y4b-hr-dns" id="726-WB-hwo">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Vx-u9-GCZ">
-                                            <rect key="frame" x="20" y="10" width="100" height="100"/>
+                                            <rect key="frame" x="20" y="10" width="276.5" height="276.5"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="3Yp-c8-Ts7"/>
-                                                <constraint firstAttribute="height" constant="100" id="WEH-ym-hKB"/>
+                                                <constraint firstAttribute="width" secondItem="0Vx-u9-GCZ" secondAttribute="height" multiplier="1:1" id="5hH-Lq-Vdd"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEY-sO-kPM">
-                                            <rect key="frame" x="166" y="38" width="83" height="42"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEY-sO-kPM">
+                                            <rect key="frame" x="311.5" y="38" width="82.5" height="219"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -42,11 +42,11 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="KEY-sO-kPM" firstAttribute="top" secondItem="726-WB-hwo" secondAttribute="topMargin" constant="27" id="4wz-fe-VPZ"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KEY-sO-kPM" secondAttribute="trailing" constant="145" id="8PR-p8-alQ"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KEY-sO-kPM" secondAttribute="trailing" id="8PR-p8-alQ"/>
                                         <constraint firstItem="0Vx-u9-GCZ" firstAttribute="leading" secondItem="726-WB-hwo" secondAttribute="leading" constant="20" id="fuE-4z-mvH"/>
                                         <constraint firstItem="0Vx-u9-GCZ" firstAttribute="top" secondItem="726-WB-hwo" secondAttribute="top" constant="10" id="nbT-if-1Bj"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="KEY-sO-kPM" secondAttribute="bottom" constant="29" id="omU-yW-gqo"/>
-                                        <constraint firstItem="KEY-sO-kPM" firstAttribute="leading" secondItem="0Vx-u9-GCZ" secondAttribute="trailing" constant="46" id="tAv-lh-L3y"/>
+                                        <constraint firstItem="KEY-sO-kPM" firstAttribute="leading" secondItem="0Vx-u9-GCZ" secondAttribute="trailing" constant="15" id="tAv-lh-L3y"/>
                                         <constraint firstAttribute="bottom" secondItem="0Vx-u9-GCZ" secondAttribute="bottom" constant="10" id="tS8-PR-bLJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -68,10 +68,10 @@
             </objects>
             <point key="canvasLocation" x="-636.23188405797111" y="54.910714285714285"/>
         </scene>
-        <!--Xcode Simulator View Controller-->
+        <!--UILabel-->
         <scene sceneID="Zme-hj-nvB">
             <objects>
-                <viewController id="BSR-iK-i95" customClass="XcodeSimulatorViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="UILabel" id="BSR-iK-i95" customClass="XcodeSimulatorViewController" customModule="iOSClub" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nOl-iQ-FYg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
